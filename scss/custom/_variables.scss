@@ -1,0 +1,23 @@
+$rem: 16;
+$font-path: '../fonts';
+$img-path: '../icons';
+
+//Theme variables
+$hcc-color : #fb0505;
+$hcc-color-80 : #fb0505;
+$hcc-color-60 : #fb0505;
+$hcc-color-40 : #fb0505;
+$hcc-color-20 : #fb0505;
+
+
+
+
+@mixin theme-structure($theme-color, $theme-color-80, $theme-color-60, $theme-color-40, $theme-color-20) {
+
+    @media (max-width: 767px) {
+       
+    }
+    @media (max-width: 991px) {
+        
+    }
+}

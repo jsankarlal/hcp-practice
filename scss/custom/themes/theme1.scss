@@ -1,0 +1,7 @@
+@import "../variables";
+$theme1-color: #008abf;
+$theme1-color-80: #008abf;
+$theme1-color-60: #008abf;
+$theme1-color-40: #008abf;
+$theme1-color-20: #008abf;
+@include theme-structure($theme1-color, $theme1-color-80, $theme1-color-60, $theme1-color-40, $theme1-color-20);
