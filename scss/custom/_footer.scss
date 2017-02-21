@@ -1,1 +1,59 @@
 //footer.scss
+footer{
+	color:#fff;
+	
+	#contact-us-section{
+		background: rgb(102, 102, 102);
+		padding:50px 15px;
+	}
+
+	#social-icons-section{
+		border-bottom:10px solid rgb(86, 86, 86);
+		padding:30px 15px;
+		background: rgb(51, 51, 51);
+	}
+	
+	.social-icon{
+		margin-right:20px; 
+			& > a{
+		    border-radius: 50%;
+		    color: rgb(86, 86, 86);
+		    background: #fff;
+		} 
+	}
+
+}
+
+
+@media (max-width: $screen-xs-max) {
+	footer{
+		.mobile-center{
+			clar:both;
+			text-align:center;
+		}
+		.nav > li {
+			display:inline;
+			&>a{
+				display:inline;
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-sm-max) {
+    footer{
+		
+	}
+}
+
+@media (max-width: $screen-md-max) {
+    footer{
+		
+	}
+}
+
+@media (min-width: $screen-lg-min) {
+    footer{
+		
+	}
+}
