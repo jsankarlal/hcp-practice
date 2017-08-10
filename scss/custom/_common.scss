@@ -1,0 +1,37 @@
+.text-align-left{
+	text-align:left;	
+}
+
+.text-align-right{
+	text-align:right;	
+}
+
+.text-align-center{
+	text-align:center;	
+}
+
+.red-button{
+	background:rgb(204, 0, 0);
+	color:#fff;
+}
+.btn.btn-default{
+	border-radius:0;
+}
+.btn.btn-default.red-button{
+	background:rgb(204, 0, 0);
+	color:#fff;
+	border-color:rgb(204, 0, 0);
+}
+
+.hcc-section{
+	width:100%;
+	min-height:300px;
+}
+
+.dark-bg{
+    background: #4d4d4d;
+}
+
+.grey-bg{
+    background: #dbdbdb;
+}

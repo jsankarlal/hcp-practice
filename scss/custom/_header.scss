@@ -1,0 +1,63 @@
+//header.scss
+.body-fixed-top-nav{
+	margin-top:145px;	
+}
+
+#global-navigation{
+	.top-header{
+		border-top:10px solid rgb(204, 0, 0);
+		height:80px;
+	}
+	
+	.primary-navigation{
+		height:70px;
+		color:#fff;
+	}
+}
+
+#global-navigation.navbar-default{
+	.top-header{
+		border-top:10px solid rgb(204, 0, 0);
+		background:rgb(219, 219, 219);
+	}
+	
+	.primary-navigation{
+		background:rgb(77, 77, 77);
+	}
+}
+
+#global-navigation.navbar-inverse{
+	.top-header{
+		
+	}
+	
+	.primary-navigation{
+
+	}
+}
+
+
+
+@media (max-width: $screen-xs-max) {
+     #global-navigation{
+     	
+     }  
+}
+
+@media (max-width: $screen-sm-max) {
+    #global-navigation{
+     	
+     }  
+}
+
+@media (max-width: $screen-md-max) {
+    #global-navigation{
+     	
+     }  
+}
+
+@media (min-width: $screen-lg-min) {
+    #global-navigation{
+     	
+     }  
+}
