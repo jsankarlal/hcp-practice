@@ -1,6 +1,6 @@
 //header.scss
-.body-fixed-top-nav{
-	margin-top:145px;	
+.navbar-fixed-top-margin{
+    margin-bottom: 64px;
 }
 
 #global-navigation{
@@ -42,6 +42,9 @@
             top: 0;
             width: 100%;
             z-index: 999;
+        }
+        .brand-header-logo{
+            height:64px;
         }
 	}
 }
@@ -89,9 +92,9 @@
 	}
 	.brand-header{
 		color:#fff;
-		background:$celergen-blue;
+		background: rgb(0,19,29);//$celergen-blue;
 		a{
-			color:#ccc;
+			color:#fff;
 		}
 	}
 	
@@ -105,11 +108,21 @@
 
 @media (max-width: $screen-xs-max) {
      #global-navigation{
-        
+        .brand-header{
+            .brand-header-logo{
+                height:50px;
+            }
+        }
      }
-    .video-container{
-        display:none;
+    #nav.affix {
+        top: 50px;
     }
+    .navbar-fixed-top-margin{
+        margin-bottom: 50px;
+    }
+    /*.video-container{
+        display:none;
+    }*/
 }
 
 @media (max-width: $screen-sm-max) {

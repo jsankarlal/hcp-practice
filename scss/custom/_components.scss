@@ -114,7 +114,9 @@ body.authentication-modal-open {
 }
 
 /* Celergen Hero Section - starts*/
-
+.homepage-hero-module{
+    overflow:hidden;
+}
 .hero-middle-content{
     z-index:5;
     position: absolute;
@@ -160,6 +162,18 @@ body.authentication-modal-open {
 
 
 /* Celergen Video Section  - Ends*/
+@media screen and (min-width: $screen-sm-max){
+.hero-middle-content{
+        .hero-image-section{
+            .image-column{
+                text-align:center;
+                img{
+                    float:right;
+                }
+            }
+        }
+    }
+ }       
 @media screen and (max-width: $screen-xs-max){
     #popup-template .modal-dialog{
         margin-top:50px;
@@ -182,10 +196,14 @@ body.authentication-modal-open {
             margin-right: auto;
             .image-column{
                 text-align:center;
+                img{
+                    clear:both;
+                }
             }
             .text-column{
                 padding-left:15px;
                 margin-top:15px;
+                text-align:center;
             }
             .hero-btn-group{
                 margin-top: 15px;

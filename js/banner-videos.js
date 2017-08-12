@@ -27,7 +27,7 @@
             /* affix the navbar after scroll below header */
             $('#nav').affix({
                   offset: {
-                    top: $('header').height()+$('.homepage-hero-module').height()
+                    top: $('.homepage-hero-module').height()
                   }
             });	
 

@@ -73,15 +73,15 @@ body {
 }
 /* + icon before the accordion title */
 
-.accordion-section-title.active:before, .accordionTitleActive:before, .accordionTitle.is-expanded:before {
+.accordion-section-title.active:after, .accordionTitleActive:before, .accordionTitle.is-expanded:before {
     -webkit-transform: rotate(-225deg);
     transform: rotate(-225deg);
 }
-.accordion-section-title:before, .accordion__Heading:before {
+.accordion-section-title:after, .accordion__Heading:before {
     content: "+";
     font-size: 1.5em;
     line-height: 1em;
-    float: left;
+    float: right;
     -webkit-transition: -webkit-transform 0.3s ease-in-out;
     transition: -webkit-transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
