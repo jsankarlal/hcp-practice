@@ -4,55 +4,52 @@
     <title>Celergen Clinical Trials</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <link type="text/css" rel="stylesheet" href="build/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="boot/boot.css" />
     <link type="text/css" rel="stylesheet" href="build/css/themes/theme1.css"/>
 </head>
-<body>
-    <header>
-			<nav id="global-navigation" class="navbar navbar-inverse margin-bottom-0 main-navigation">
-			<!-- Global Header Starts -->
-				
-				
-				<div class="brand-header affix-top" data-spy="affix" data-offset-top="0">
-					<!-- Brand Header -->
-					<div class="container">
-						<div class="row">
-							<div class="col-xs-12 col-sm-8">
-                                <a href="home.html"><img src="build/assets/icons/logo-white.png" class="brand-header-logo" alt="Celergen Switcherland" title="Celergen Switcherland"> </a>
-							</div>
-							<div class="hidden-xs col-sm-4 pull-right">
-								<a href="tel:1-800-267-3960" class="block-link"><i class="fa fa-phone" aria-hidden="true"></i> <span>1-800-267-3960</span></a>
-								<a href="sms:1-800-267-3960?body=buy" class="block-link action-link"><i class="fa fa-cart-plus" aria-hidden="true"></i> <span>Add to Cart</span></a>
-								<!-- <a href="sms:1-800-267-3960?body=buy" class="block-link"><i class="fa fa-comment" aria-hidden="true"></i> <span>1-800-267-3960</span></a> -->
-								<!-- <a href="sms:1-800-267-3960?body=buy"  class="block-link"><i class="fa fa-phone-square" aria-hidden="true"></i> <span>1-800-267-3960</span></a>
-								<a href="tel:1-800-267-3960" class="block-link"><i class="fa fa-comment-o" aria-hidden="true"></i> <span>1-800-267-3960</span></a> -->
-							</div>
-						</div>
-					</div>
-					<!-- /Brand Header -->
-				</div>
-			
-			<!-- Global Header Ends -->
-			    
-			</nav>
-		</header>
-		<div class="main-container">
-<!--            <div class="divider" id="section1"></div>-->
-		    <div class="homepage-hero-module" id="section1">
-                 <div class="video-container">
-                     <div class="filter"></div>
-                     <video autoplay loop class="fillWidth">
-                         <source src="build/assets/videos/snowfall/snowfall.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                         <!-- <source src="build/assets/videos/Heaven/Heaven.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser. -->
+    <body class="navbar-fixed-top-margin">
+        <header>
+            <nav id="global-navigation" class="navbar navbar-fixed-top navbar-inverse margin-bottom-0 main-navigation">
+            <!-- Global Header Starts -->
+                <div class="brand-header">
+                    <!-- Brand Header -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8">
+                                <img src="build/assets/icons/logo-white.png" class="brand-header-logo" alt="Celergen Switcherland" title="Celergen Switcherland">
+                            </div>
+                            <div class="hidden-xs col-sm-4 pull-right">
+                                <a href="tel:1-800-267-3960" class="block-link"><i class="fa fa-phone" aria-hidden="true"></i> <span>1-800-267-3960</span></a>
+                                <a href="sms:1-800-267-3960?body=buy" class="block-link action-link"><i class="fa fa-cart-plus" aria-hidden="true"></i> <span>Add to Cart</span></a>
+                                <!-- <a href="sms:1-800-267-3960?body=buy" class="block-link"><i class="fa fa-comment" aria-hidden="true"></i> <span>1-800-267-3960</span></a> -->
+                                <!-- <a href="sms:1-800-267-3960?body=buy"  class="block-link"><i class="fa fa-phone-square" aria-hidden="true"></i> <span>1-800-267-3960</span></a>
+                                <a href="tel:1-800-267-3960" class="block-link"><i class="fa fa-comment-o" aria-hidden="true"></i> <span>1-800-267-3960</span></a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Brand Header -->
+                </div>
+            
+            <!-- Global Header Ends -->
+                
+            </nav>
+        </header>
+        <div class="main-container">
+            <div class="homepage-hero-module" id="celergen">
+                 <div class="hero-video-banner">
+                     <video autoplay loop class="fillWidth video-container visible-md visible-lg">
+                         <source src="build/assets/videos/snowfall/snowfall.mp4" type="video/mp4" />
+                         Your browser does not support the video tag. I suggest you upgrade your browser.
                      </video>
-                     <div class="poster hidden">
-                         <img src="build/assets/videos/snowfall/snowfall.png" alt="">
+                     <div class="poster visible-xs visible-sm">
+                         <img src="build/assets/videos/snowfall/snowfall.png" class="img-responsive" alt="">
                      </div>
                  </div>
                  <div class="container hero-middle-content">
                     <div class="row">
                         <div class="hero-image-section">
                             <div class="col-xs-12 col-sm-6 image-column">
-                                <img src="build/assets/icons/Photo_pack_home_HD.png" alt="">
+                                <img src="build/assets/icons/Photo_pack_home_HD.png" class="img-responsive" alt="Celergen Pack">
                             </div>
                             <div class="col-xs-12 col-sm-6 text-column">
                                  <h2> Redefining the </h2>
@@ -67,6 +64,20 @@
                     </div>
                  </div>
              </div>
+
+        <!-- Fixed navbar -->
+        <div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav">
+            <div class="container">
+                <ul class="nav navbar-nav nav-justified">
+                  <li ><a href="home.html#celergen"><strong>Celergen</strong></a></li>
+                  <li><a href="home.html#benefits">Benifits</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li class="active"><a href="#"><strong>Clinical Trials</strong></a></li>
+                </ul>
+                <div class="clearfix"></div>
+            <!--/.nav-collapse -->
+            </div><!--/.container -->
+        </div><!--/.navbar -->
 			<!--<section class="hero-section hero-carousel">
 
 	            <div id="carousel-example-generic2" class="carousel slide full-width" data-interval="5000" data-pause="hover" data-wrap="true" data-ride="carousel">
