@@ -1,6 +1,6 @@
 $rem: 16;
-$font-path: '../fonts';
-$img-path: '../icons';
+$font-path: '../assets/fonts';
+$img-path: '../assets/icons';
 
 $screen-xs-max: 767px;
 $screen-sm-max: 991px;
@@ -8,11 +8,22 @@ $screen-md-max: 1199px;
 $screen-lg-min: 1200px; 
 
 //Theme variables
-$hcc-color : #fb0505;
-$hcc-color-80 : #fb0505;
-$hcc-color-60 : #fb0505;
-$hcc-color-40 : #fb0505;
-$hcc-color-20 : #fb0505;
+$g3-color : #fb0505;
+$g3-color-80 : #fb0505;
+$g3-color-60 : #fb0505;
+$g3-color-40 : #fb0505;
+$g3-color-20 : #fb0505;
+
+$celergen-light1: #eef3f6;
+$celergen-light2: #dce1e5;
+$celergen-dark1: #e8edf0;
+$celergen-dark2: #181f32;
+$black1:#161718;
+$dark-blue1:#0e1525;
+
+$celergen-red:#ba1c31; //rgb(186, 28, 49)
+$celergen-blue:#003c62;
+$celergen-black:#252525;
 
 
 

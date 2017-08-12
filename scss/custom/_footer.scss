@@ -1,59 +1,116 @@
 //footer.scss
-footer{
+footer, .footer{
 	color:#fff;
-	
-	#contact-us-section{
-		background: rgb(102, 102, 102);
-		padding:50px 15px;
+	background:$celergen-blue;
+	a{
+		color: #ccc;
+		&.action-link {
+		    display: inline;
+		    font-size: 14px;
+		    line-height: 24px;
+		}
+		&.btn.btn-default{
+		    line-height: inherit;
+		    display: block;
+		    width: 100%;
+		    white-space: normal;
+		    background:$celergen-blue;
+		    &:hover, &:focus{
+                text-decoration: underline;
+                background:$celergen-blue;
+                color: #fff;
+            }
+		}
 	}
-
-	#social-icons-section{
-		border-bottom:10px solid rgb(86, 86, 86);
-		padding:30px 15px;
-		background: rgb(51, 51, 51);
-	}
-	
-	.social-icon{
-		margin-right:20px; 
-			& > a{
-		    border-radius: 50%;
-		    color: rgb(86, 86, 86);
-		    background: #fff;
-		} 
-	}
-
+	ul{ 
+		list-style-type:none;
+	    li {
+	    	margin-bottom: 10px;
+	    	a{
+	    	    &:hover, &:focus{
+                    text-decoration: underline;
+                }
+	    	}
+    	}
+   }
+    #footer-copyright {
+      height: 60px;
+      background-color: $dark-blue1;
+      margin-top:50px;
+      padding-top:20px;
+      padding-bottom:20px;
+      color:#fff;
+    }
 }
 
+.scroll-top {
+    position: fixed;
+    bottom: 0;
+    right: -60px;
+    z-index: 100;
+    //background: $celergen-red; //rgb(186, 28, 49);
+    background: rgba(186, 28, 49, .5);
+    font-size: 24px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color:#fff;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
+    -webkit-transform: translateZ(0px);
+    -moz-transform: translateZ(0px);
+    -ms-transform: translateZ(0px);
+    -o-transform: translateZ(0px);
+    transform: translateZ(0px);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    a {
+        position: relative;
+        display: block;
+        padding: 8px 12px;
+        &:hover, &:focus {
+            text-decoration: none;
+        }
+        &:link, &:visited {
+            color: #fff;
+        }
+    }
+    &.active{
+        right: 15px;
+    }
+}
 
 @media (max-width: $screen-xs-max) {
-	footer{
+	footer, .footer{
 		.mobile-center{
 			clar:both;
 			text-align:center;
-		}
-		.nav > li {
-			display:inline;
-			&>a{
-				display:inline;
-			}
 		}
 	}
 }
 
 @media (max-width: $screen-sm-max) {
-    footer{
+    footer, .footer{
 		
 	}
 }
 
 @media (max-width: $screen-md-max) {
-    footer{
+    footer, .footer{
 		
 	}
 }
 
 @media (min-width: $screen-lg-min) {
-    footer{
+    footer, .footer{
 		
 	}
 }

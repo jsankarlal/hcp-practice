@@ -6,9 +6,18 @@
 
 module.exports = function(grunt){
     var scriptPath = 'js/';
-    var destPath = 'etc/designs/hcc/';
+    var destPath = 'zo/dist/';
     var customScript = [
+ //       scriptPath+'utility.js',
+        scriptPath+'banner-videos.js',
+        scriptPath+'accordion.js',
+        //tab to collapse
+   //     scriptPath+'jquery.cookie.js',
+        scriptPath+'easyResponsiveTabs.js',
+ //       scriptPath+'switcher.js',
         scriptPath+'script.js'
+ //       scriptPath+'jquery.nicescroll.min.js',
+ //       scriptPath+'tabs.js'
     ];
     
     var libJs = [
@@ -22,15 +31,16 @@ module.exports = function(grunt){
 		uglify: {
 			dist: {
 				files: {
-					'build/js/hcc.js': 'build/js/hcc.js'
+					'build/jsmin/g3scripts.min.js': 'build/js/g3scripts.js',
+			//		destPath + '/jsmin/g3scripts.min.js': 'build/js/g3scripts.js'
 				}
 			}
 		},
 		concat : {
 			dist : {
 				files: {
-	//				 destPath + 'globaljs/js/hcc.js': [ libJs, customScript ],
-					'build/js/hcc.js': [ libJs, customScript ]
+	//				 destPath + '/js/g3scripts.js': [ libJs, customScript ],
+					'build/js/g3scripts.js': [ libJs, customScript ]
 				}
 			}
 		},
@@ -72,13 +82,24 @@ module.exports = function(grunt){
                 }]
 			},
 		},
-/*        copy: {
+		cssmin: {
+            target: {
+                files: [{
+                    expand: true,
+                    cwd: 'build/css',
+                    src: ['*.css', 'themes/*.css'],
+                    dest: 'build/cssmin',
+                    ext: '.min.css'
+                }]
+            }
+        },
+		copy: {
             css: {
                 files: [{
                     expand: true, 
                     cwd: 'build/css/',
                     src: ['**'],
-                    dest: destPath + 'globalcss/css/'
+                    dest: destPath + '/css/'
                 }]
             },
             js: {
@@ -86,11 +107,22 @@ module.exports = function(grunt){
                     expand: true, 
                     cwd: 'build/js/',
                     src: ['**'],
-                    dest: destPath + 'globaljs/js/'
+                    dest: destPath + '/js/'
                 }]
+            },
+            cssmin: {
+                expand: true, 
+                cwd: 'build/cssmin/',
+                src: ['**'],
+                dest: destPath + 'mincss/'
+            },
+            jsmin: {
+                expand: true, 
+                cwd: 'build/jsmin/',
+                src: ['**'],
+                dest: destPath + 'minjs/'
             }
         },
-*/
 		watch: {
 			scripts: {
 				files: ['js/**/*.js', 'scss/**/*.scss'],
@@ -108,14 +140,15 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-newer');
-
-
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 
 	grunt.registerTask('dev', [
 		'newer:concat',
 		'newer:jscs',
+		'newer:uglify',
 		'sass:dev',
-        'newer:copy'
+		'newer:cssmin',
+		'newer:copy'
 	]);
     
 	
@@ -124,6 +157,7 @@ module.exports = function(grunt){
 		'jscs',
 		'uglify',
 		'sass:prod',
+		'cssmin',
         'copy'
 	]);
 	

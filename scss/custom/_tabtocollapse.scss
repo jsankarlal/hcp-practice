@@ -1,0 +1,79 @@
+/* BEGIN Multiple Column Collapsible */
+
+/* collapsible for all the device if breakpoint desktop is selected */
+.multiple-column-collapsible[data-max-collapse-breakpoint='lg'] > div[class^='col-'] {
+    border-top: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.multiple-column-collapsible[data-max-collapse-breakpoint='lg'] > div[class^='col-']:first-child {
+    border-top: 0 none;
+}
+
+.multiple-column-collapsible .collapse-panel-heading.collapsed > span.fa{
+    transform: rotate(180deg);
+}
+
+.multiple-column-collapsible .collapse-panel-heading > span.fa {
+    transform: rotate(0deg);
+    transition: transform 250ms ease;
+}
+
+/* collapsible for all the device if breakpoint Tablet - Landscape is selected */
+@media (min-width: 1200px) {
+    .multiple-column-collapsible[data-max-collapse-breakpoint='md'] .collapse {
+        display: block;
+    }
+}
+
+@media (max-width: 1199px) {
+    .multiple-column-collapsible[data-max-collapse-breakpoint='md'] > div[class^='col-'] {
+        border-top: 1px solid #ddd;
+        padding-bottom: 15px;
+    }
+
+    .multiple-column-collapsible[data-max-collapse-breakpoint='md'] > div[class^='col-']:first-child {
+        border-top: 0 none;
+    }
+}
+
+/* collapsible for all the device if breakpoint Tablet - portrait is selected */
+
+@media (min-width: 992px) {
+    .multiple-column-collapsible[data-max-collapse-breakpoint='sm'] .collapse {
+        display: block;
+    }
+}
+
+@media (max-width: 991px) {
+    .multiple-column-collapsible[data-max-collapse-breakpoint='sm'] > div[class^='col-'] {
+        border-top: 1px solid #ddd;
+        padding-bottom: 15px;
+    }
+
+    .multiple-column-collapsible[data-max-collapse-breakpoint='sm'] > div[class^='col-']:first-child {
+        border-top: 0 none;
+    }
+}
+
+/* collapsible for all the device if breakpoint Mobile is selected */
+
+@media (min-width: 768px) {
+    .multiple-column-collapsible[data-max-collapse-breakpoint='xs'] .collapse {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .multiple-column-collapsible[data-max-collapse-breakpoint='xs'] > div[class^='col-'] {
+        border-top: 1px solid #ddd;
+        padding-bottom: 15px;
+    }
+
+    .multiple-column-collapsible[data-max-collapse-breakpoint='xs'] > div[class^='col-']:first-child {
+        border-top: 0 none;
+    }
+    
+}
+/* END Multiple Column Collapsible */
+

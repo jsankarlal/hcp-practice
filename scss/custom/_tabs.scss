@@ -1,0 +1,1569 @@
+/*
+*  Table of Contents:
+*
+*  1. CSS Inits
+*  2. PRELOADER
+*  3. Horizontal Tabs
+*  4. VerticalTab Tabs
+*  4. VerticalTab Tabs
+*  5. Tabs Responsive
+*  6. Footer
+*/
+
+
+
+/*
+===============================================
+--------------- 1. CSS Inits ------------------
+===============================================
+*/
+/*
+body {
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: url("../images/bg.jpg");
+	background-position: center center;	
+	font-family: "Roboto", sans-serif;
+	line-height: 26px;
+	font-size: 14px;
+	color: #f8f7ee;
+    background: #29324e;
+}
+
+.page_wrapper {
+    width: 100%;
+    position: relative;
+}
+*/
+/*
+===============================================
+--------------- 2. PRELOADER ------------------
+===============================================
+*/
+
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 9999999999;
+}
+.preloader .spinner {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+    -webkit-animation: rotatee 2.0s infinite linear;
+    animation: rotatee 2.0s infinite linear;
+}
+.preloader .spinner .dot1,
+.preloader .spinner .dot2 {
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    border-radius: 100%;
+    -webkit-animation: bouncee 2s infinite ease-in-out;
+    animation: bouncee 2s infinite ease-in-out;
+}
+.preloader .spinner .dot2 {
+    top: auto;
+    bottom: 0px;
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+}
+@-webkit-keyframes rotatee {
+    100% {
+    -webkit-transform: rotate(360deg);
+}
+}
+@keyframes rotatee {
+    100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+}
+@-webkit-keyframes bouncee {
+    0%,
+    100% {
+    -webkit-transform: scale(0);
+}
+50% {
+    -webkit-transform: scale(1);
+}
+}
+@keyframes bouncee {
+    0%,
+    100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+}
+50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+}
+
+/*
+===============================================
+--------------- CSS Demo ------------------
+===============================================
+*/
+h3.h3_title {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    line-height: 33px;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header-top {
+	background-color: #333333;
+	color: #fff;
+	padding: 24px 0 39px;
+}
+.header-top h2 {
+	font-family: "Oswald", sans-serif;
+	font-size: 30px;
+	line-height: 33px;
+	font-weight: normal;
+	margin: 0;
+	text-align: center;
+}
+.header-bottom {
+	background-color: #fff;
+}
+.logo {
+	padding-top: 25px;
+}
+.btn-pursache {
+	color: #fff;
+	display: block;
+	font-family: "Oswald", sans-serif;
+	font-size: 30px;
+	height: 95px;
+	line-height: 95px;
+	padding: 0 30px;
+	position: relative;
+	z-index: 1;
+	text-decoration: none !important;
+	-webkit-transition: all 0s ease-in-out 0s;
+	-moz-transition: all 0s ease-in-out 0s;
+	-o-transition: all 0s ease-in-out 0s;
+	transition: all 0s ease-in-out 0s;
+}
+.btn-pursache:before {
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+	-webkit-transform: skewX(-15deg);
+	-moz-transform: skewX(-15deg);
+	-ms-transform: skewX(-15deg);
+	-o-transform: skewX(-15deg);
+	transform: skewX(-15deg);
+}
+.btn-pursache:after {
+	background-color: rgba(0, 0, 0, 0.1);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 0;
+	z-index: -1;
+	-webkit-transform: skewX(-15deg);
+	-moz-transform: skewX(-15deg);
+	-ms-transform: skewX(-15deg);
+	-o-transform: skewX(-15deg);
+	transform: skewX(-15deg);
+	-webkit-transition: all 350ms cubic-bezier(0.77, 0, 0.175, 1) 0s;
+	-moz-transition: all 350ms cubic-bezier(0.77, 0, 0.175, 1) 0s;
+	-ms-transition: all 350ms cubic-bezier(0.77, 0, 0.175, 1) 0s;
+	-o-transition: all 350ms cubic-bezier(0.77, 0, 0.175, 1) 0s;
+}
+.btn-pursache:hover,
+.btn-pursache:focus {
+  color: #fff;
+}
+.btn-pursache:hover:after,
+.btn-pursache:focus:after {
+  width: 100%;
+}
+.dark-bg {
+	background-color: #333333;
+}
+.white-bg {
+	background-color: #ffffff;
+}
+.other-bg {
+	background-color: #f1f3f7;
+}
+
+.section-full {
+	padding: 80px 0;
+	&.blue-bg{
+	    color: #f8f7ee;
+        background: #29324e;
+        h1{
+            font-family: "Roboto", sans-serif;
+            text-transform:uppercase;
+        }
+        .description{
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+	}
+}
+
+.effect-tabs {
+	text-align: center;
+	margin-bottom: 35px;
+	font-family: "Roboto", sans-serif;
+}
+.effect-tabs h3 {
+	font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.effect-tabs .dropdown-select {
+    position: relative;
+    width: 200px;
+    margin: 0;
+    padding: 6px 20px;
+    height: 40px;
+    line-height: 14px;
+    font-size: 13px;
+    color: #fff;
+    background: #3C3E40;
+    border: 0;
+    border-radius: 0;
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+.demo-header {
+	text-align: center;
+	padding: 30px;
+}
+.demo-header a {
+	color: #fff;
+	background: #333;
+	text-decoration: none;
+	padding: 10px;
+}
+.demo-header a:hover {
+	color: #fff;
+	background-color: rgba(0,0,0,0.6);
+	text-decoration: none;
+}
+.demo-header a.current-demo {
+    color: #fff;
+    text-decoration: none;
+}
+/*
+=====================================================
+--------------- 3. Horizontal Tabs ------------------
+=====================================================
+*/
+.horizontal-tabs-g3 {
+.tabs_scroll {
+    height: 500px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;		
+}
+.nicescroll-rails {
+	width: 12px !important;
+    background: rgba(0,0,0,0.1) !important;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+/*
+--------------- Demo 1 ------------------
+*/
+
+.HorizontalTab.tabs_hor_1 .resp-tabs-list li {
+	display: inline-block;
+	margin: 0 4px 0 0;
+	list-style: none;
+	cursor: pointer;
+	float: left;
+	background-color: rgba(0,0,0,0.6) !important;
+	color: #fff;
+	border: none;
+	padding: 18px;
+	font-size: 14px;
+	font-weight: 500;
+	margin-right: 6px;
+	line-height: 24px;
+	border-radius: 2px 2px 0 0;
+	margin-bottom: 3px !important;
+}
+
+.HorizontalTab.tabs_hor_1 .resp-tabs-list .resp-tab-active {
+	border: 0 !important;
+	margin-bottom: -1px !important;
+    padding: 18px !important;
+	color: #fff !important;
+}
+
+.HorizontalTab.tabs_hor_1 .resp-tabs-list li i {
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.HorizontalTab.tabs_hor_1  h2.title_contanier {
+	font-family: "Roboto", sans-serif;
+	font-size: 28px;
+	font-weight: 300;
+	color: #999;
+	text-transform: inherit;
+	margin-top: 0px;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	padding-top: 12px;
+//	line-height: 3px;
+	border-bottom: 1px solid #eee;
+}
+
+.HorizontalTab.tabs_hor_1 .resp-tab-content {
+    border: 0 !important;
+    padding: 33px 30px;
+    -webkit-box-shadow: 9px 9px 0px rgba(50, 50, 50, 0.31);
+    -moz-box-shadow: 9px 9px 0px rgba(50, 50, 50, 0.31);
+    box-shadow: 9px 9px 0px rgba(50, 50, 50, 0.31);
+}
+
+
+.HorizontalTab.tabs_hor_1 p {
+	color: #434a54;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+
+/*
+--------------- Demo 2 ------------------
+*/
+
+
+.HorizontalTab.tabs_hor_2 .resp-tabs-list li {
+	display: inline-block;
+	margin: 0 4px 0 0;
+	list-style: none;
+	cursor: pointer;
+	float: left;
+	background-color: rgba(0,0,0,0.6) !important;
+	color: #fff;
+	border: none;
+	padding: 18px;
+	font-size: 14px;
+	font-weight: 500;
+	margin-right: 6px;
+	line-height: 24px;
+	border-radius: 2px 2px 0 0;
+	margin-bottom: 3px !important;
+	width: 100px;
+	text-align: center;
+}
+
+.HorizontalTab.tabs_hor_2 .resp-tabs-list .resp-tab-active {
+	border: 0 !important;
+	margin-bottom: -1px !important;
+    padding: 18px !important;
+	color: #fff !important;
+}
+
+.HorizontalTab.tabs_hor_2 .resp-tabs-list li i {
+	font-size: 20px;
+	position: relative;
+	display: block;
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+.HorizontalTab.tabs_hor_2  h2.title_contanier {
+	font-family: "Roboto", sans-serif;
+	font-size: 28px;
+	font-weight: 300;
+	color: #999;
+	text-transform: inherit;
+	margin-top: 0px;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	padding-top: 12px;
+	line-height: 3px;
+	border-bottom: 1px solid #eee;
+}
+
+.HorizontalTab.tabs_hor_2 .resp-tab-content {
+    border: 0 !important;
+    padding: 33px 30px;
+    -webkit-box-shadow: 9px 9px 0px rgba(50, 50, 50, 0.31);
+    -moz-box-shadow: 9px 9px 0px rgba(50, 50, 50, 0.31);
+    box-shadow: 9px 9px 0px rgba(50, 50, 50, 0.31);
+}
+
+
+.HorizontalTab.tabs_hor_2 p {
+	color: #434a54;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+/*
+--------------- Demo 3 ------------------
+*/
+
+
+.HorizontalTab.tabs_hor_3 .resp-tabs-list li {
+	display: inline-block;
+	margin: 0 4px 0 0;
+	list-style: none;
+	cursor: pointer;
+	float: left;
+	color: #fff;
+	border: none;
+	padding: 18px;
+	font-size: 14px;
+	font-weight: 500;
+	margin-right: 6px;
+	line-height: 24px;
+	border-radius: 2px 2px 0 0;
+	margin-bottom: 3px !important;
+	text-align: center;
+	padding: 20px !important;
+	display: block;
+	text-align: center;
+}
+
+.HorizontalTab.tabs_hor_3 .resp-tabs-list .resp-tab-active {
+	border: 0 !important;
+	margin-bottom: -1px !important;
+    padding: 18px !important;
+	background-color: #fff !important;
+	padding: 20px !important;
+}
+.HorizontalTab.tabs_hor_3 .resp-tabs-list li:hover {
+    background-color: #fff !important;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+	padding: 20px !important;
+}
+
+.HorizontalTab.tabs_hor_3 .resp-tabs-list li i {
+	 font-size: 22px;
+    -webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    -moz-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0;
+    width: 42px !important;
+    height: 42px !important;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    line-height: 43px;
+	background: #fff !important;
+}
+.HorizontalTab.tabs_hor_3 .resp-tabs-list li:hover i,
+.HorizontalTab.tabs_hor_3 .resp-tabs-list .resp-tab-active i {
+    color: #fff !important;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+.HorizontalTab.tabs_hor_3 .resp-tabs-list li span.tabs-text {
+	display: none;
+}
+.HorizontalTab.tabs_hor_3  h2.title_contanier {
+	font-family: "Roboto", sans-serif;
+	font-size: 28px;
+	font-weight: 300;
+	color: #999;
+	text-transform: inherit;
+	margin-top: 0px;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	padding-top: 12px;
+	line-height: 3px;
+	border-bottom: 1px solid #eee;
+}
+
+.HorizontalTab.tabs_hor_3 .resp-tab-content {
+    border: 0 !important;
+    padding: 33px 30px;
+    -webkit-box-shadow: 9px 9px 0px rgba(50, 50, 50, 0.31);
+    -moz-box-shadow: 9px 9px 0px rgba(50, 50, 50, 0.31);
+    box-shadow: 9px 9px 0px rgba(50, 50, 50, 0.31);
+}
+
+
+.HorizontalTab.tabs_hor_3 p {
+	color: #434a54;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+/*
+--------------- Demo 4 ------------------
+*/
+
+.HorizontalTab.tabs_hor_4 .resp-tabs-list li {
+	font-weight: 400;
+	font-size: 14px;
+	display: inline-block;
+	padding: 13px 15px;
+	margin: 0 2px 0 0;
+	list-style: none;
+	cursor: pointer;
+	float: left;
+	border: 0 !important;
+	border-top: 2px solid transparent !important;
+	background-color: #fff !important;
+	color: #000 !important;
+	padding: 17px !important;
+}
+
+.HorizontalTab.tabs_hor_4 .resp-tabs-list .resp-tab-active {
+	border: 0 !important;
+	color: #000 !important;
+	font-weight: 600;
+	background-color: #fafafa !important;
+	padding: 17px !important;
+}
+.HorizontalTab.tabs_hor_4 .resp-tabs-list li:hover {
+    border: 0 !important;
+	color: #000 !important;
+	background-color: #fafafa !important;
+	padding: 17px !important;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.HorizontalTab.tabs_hor_4 .resp-tabs-list li i {
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.HorizontalTab.tabs_hor_4  h2.title_contanier {
+	font-family: "Roboto", sans-serif;
+	font-size: 28px;
+	font-weight: 300;
+	color: #999;
+	text-transform: inherit;
+	margin-top: 0px;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	padding-top: 12px;
+	line-height: 3px;
+	border-bottom: 1px solid #eee;
+}
+
+.HorizontalTab.tabs_hor_4 .resp-tab-content {
+    border: 0 !important;
+    padding: 33px 30px;
+    -webkit-box-shadow: 0;
+    -moz-box-shadow: 0;
+    box-shadow: 0;
+	background-color: #fafafa;
+    border: 0;
+}
+
+
+.HorizontalTab.tabs_hor_4 p {
+	color: #666;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+
+/*
+--------------- Demo 5 ------------------
+*/
+
+    
+.HorizontalTab.tabs_hor_5 .resp-tabs-list  {
+	border-bottom: 1px solid #d9d9d9;
+	height: 62px;
+}
+	
+.HorizontalTab.tabs_hor_5 .resp-tabs-list li {
+	font-weight: 400;
+	font-size: 14px;
+	display: inline-block;
+	padding: 13px 15px;
+	margin: 0 2px 0 0;
+	list-style: none;
+	cursor: pointer;
+	float: left;
+	border: 0 !important;
+	border-bottom: 2px solid transparent !important;
+	background-color: transparent !important;
+	color: #000 !important;
+	padding: 17px !important;
+}
+
+.HorizontalTab.tabs_hor_5 .resp-tabs-list .resp-tab-active {
+	border: 0 !important;
+	color: #000 !important;
+	font-weight: 600;
+	background-color: transparent !important;
+	padding: 17px !important;
+}
+.HorizontalTab.tabs_hor_5 .resp-tabs-list li:hover {
+    border: 0 !important;
+	color: #000 !important;
+	background-color: transparent !important;
+	padding: 17px !important;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.HorizontalTab.tabs_hor_5 .resp-tabs-list li i {
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.HorizontalTab.tabs_hor_5  h2.title_contanier {
+	font-family: "Roboto", sans-serif;
+	font-size: 28px;
+	font-weight: 300;
+	color: #999;
+	text-transform: inherit;
+	margin-top: 0px;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	padding-top: 12px;
+	line-height: 3px;
+	border-bottom: 1px solid #eee;
+	display: none;
+}
+
+.HorizontalTab.tabs_hor_5 .resp-tab-content {
+    border: 0 !important;
+    padding: 33px 0;
+    -webkit-box-shadow: 0;
+    -moz-box-shadow: 0;
+    box-shadow: 0;
+    border: 0;
+}
+
+
+.HorizontalTab.tabs_hor_5 p {
+	color: #666;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+
+/*
+=====================================================
+--------------- 4. VerticalTab Tabs -----------------
+=====================================================
+*/
+
+
+/*
+--------------- Demo 1 ------------------
+*/
+
+.VerticalTab.tabs_ver_1.resp-vtabs ul.resp-tabs-list {
+    float: left;
+    width: 25%;
+	margin-top: 0 !important;
+}
+.VerticalTab.tabs_ver_1.resp-vtabs .resp-tabs-container {
+    padding: 0px;
+    background-color: #f4f4f4;
+    border: 0;
+    float: left;
+    width: 73%;
+    min-height: 250px;
+    border-radius: 4px;
+    clear: none;
+    border-radius: 0;
+}
+.VerticalTab.tabs_ver_1 .resp-tabs-list li {
+	display: block;
+	margin:  0;
+	list-style: none;
+	cursor: pointer;
+	float: none;
+	color: #fff;
+	border: none;
+	padding: 18px !important;
+	font-size: 14px;
+	font-weight: 500;
+	margin-right: 0;
+	line-height: 24px;
+	border-radius: 0;
+	margin-bottom: 0 !important;
+	margin:  0 !important;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+.VerticalTab.tabs_ver_1 .resp-tabs-list li:last-child {
+	border-bottom: 0 !important;
+}
+.VerticalTab.tabs_ver_1 .resp-tabs-list .resp-tab-active {
+	border: 0 !important;
+    margin-bottom: 0px !important;
+    padding: 18px !important;
+    background-color: #f4f4f4 !important;
+}
+.VerticalTab.tabs_ver_1 .resp-tabs-list li:hover {
+	color: #fff !important;
+	padding: 18px !important;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.VerticalTab.tabs_ver_1 .resp-tabs-list li i {
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.VerticalTab.tabs_ver_1  h2.title_contanier {
+	font-family: "Roboto", sans-serif;
+	font-size: 28px;
+	font-weight: 300;
+	color: #999;
+	text-transform: inherit;
+	margin-top: 0px;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	padding-top: 12px;
+	line-height: 3px;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.VerticalTab.tabs_ver_1 .resp-tab-content {
+    border: 0 !important;
+    padding: 33px 30px;
+    -webkit-box-shadow: 9px 9px 0px rgba(50, 50, 50, 0.31);
+    -moz-box-shadow: 9px 9px 0px rgba(50, 50, 50, 0.31);
+    box-shadow: 9px 9px 0px rgba(50, 50, 50, 0.31);
+}
+
+
+.VerticalTab.tabs_ver_1 p {
+	color: #999;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+
+/*
+--------------- Demo 2 ------------------
+*/
+
+.VerticalTab.tabs_ver_2.resp-vtabs ul.resp-tabs-list {
+    float: left;
+    width: 25%;
+	margin-top: 0 !important;
+	float: left;
+    width: 8%;
+    margin-bottom: 10px;
+}
+.VerticalTab.tabs_ver_2.resp-vtabs .resp-tabs-container {
+	padding: 0px;
+	background-color: #f4f4f4;
+	border: 0;
+	float: left;
+	width: 89%;
+	min-height: 250px;
+	border-radius: 4px;
+	clear: none;
+	border-radius: 0;
+	margin-left: 13px;
+}
+.VerticalTab.tabs_ver_2 .resp-tabs-list li {
+	display: block;
+	margin:  0;
+	list-style: none;
+	cursor: pointer;
+	float: none;
+	color: #fff;
+	padding: 17px !important;
+	font-size: 14px;
+	font-weight: 500;
+	margin-right: 0;
+	line-height: 24px;
+	border-radius: 0;
+	margin-bottom: 0 !important;
+	margin:  0 !important;
+	border: 0 !important;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+	text-align: center;
+}
+
+.VerticalTab.tabs_ver_2 .resp-tabs-list .resp-tab-active {
+    margin-bottom: 0px !important;
+    padding: 17px !important;
+    background-color: #f4f4f4 !important;
+	border: 0 !important;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+.VerticalTab.tabs_ver_2 .resp-tabs-list li:hover {
+    background-color: #f4f4f4 !important;
+	padding: 17px !important;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.VerticalTab.tabs_ver_2 .resp-tabs-list li i {
+	font-size: 22px;
+	-webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	-moz-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	display: inline-block;
+	cursor: pointer;
+	margin: 0;
+	width: 42px !important;
+	height: 42px !important;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	line-height: 43px;
+	background: #fff !important;
+	transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+
+}
+.VerticalTab.tabs_ver_2 .resp-tabs-list .resp-tab-active i ,
+.VerticalTab.tabs_ver_2 .resp-tabs-list li:hover i {
+    color: #f4f4f4 !important;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+
+.VerticalTab.tabs_ver_2 .resp-tabs-list li span.tabs-text{
+    display: none;
+}
+
+.VerticalTab.tabs_ver_2  h2.title_contanier {
+	font-family: "Roboto", sans-serif;
+	font-size: 28px;
+	font-weight: 300;
+	color: #999;
+	text-transform: inherit;
+	margin-top: 0px;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	padding-top: 12px;
+	line-height: 3px;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.VerticalTab.tabs_ver_2 .resp-tab-content {
+    border: 0 !important;
+    padding: 33px 30px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+
+.VerticalTab.tabs_ver_2 p {
+	color: #999;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+/*
+--------------- Demo 3 ------------------
+*/
+
+.VerticalTab.tabs_ver_3.resp-vtabs ul.resp-tabs-list {
+    float: right;
+	margin-top: 0 !important;
+    width: 8%;
+}
+.VerticalTab.tabs_ver_3.resp-vtabs .resp-tabs-container {
+	padding: 0px;
+	background-color: #f4f4f4;
+	border: 0;
+	float: left;
+	width: 89%;
+	min-height: 250px;
+	border-radius: 4px;
+	clear: none;
+	border-radius: 0;
+	margin-left: 13px;
+}
+.VerticalTab.tabs_ver_3 .resp-tabs-list li {
+	display: block;
+	margin:  0;
+	list-style: none;
+	cursor: pointer;
+	float: none;
+	color: #fff;
+	padding: 17px !important;
+	font-size: 14px;
+	font-weight: 500;
+	margin-right: 0;
+	line-height: 24px;
+	border-radius: 0;
+	margin-bottom: 0 !important;
+	margin:  0 !important;
+	border: 0 !important;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+	text-align: center;
+}
+
+.VerticalTab.tabs_ver_3 .resp-tabs-list .resp-tab-active {
+    margin-bottom: 0px !important;
+    padding: 17px !important;
+    background-color: #f4f4f4 !important;
+	border: 0 !important;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+.VerticalTab.tabs_ver_3 .resp-tabs-list li:hover {
+    background-color: #f4f4f4 !important;
+	padding: 17px !important;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.VerticalTab.tabs_ver_3 .resp-tabs-list li i {
+	font-size: 22px;
+	-webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	-moz-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	display: inline-block;
+	cursor: pointer;
+	margin: 0;
+	width: 42px !important;
+	height: 42px !important;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	line-height: 43px;
+	background: #fff !important;
+	transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+
+}
+.VerticalTab.tabs_ver_3 .resp-tabs-list .resp-tab-active i ,
+.VerticalTab.tabs_ver_3 .resp-tabs-list li:hover i {
+    color: #f4f4f4 !important;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+
+.VerticalTab.tabs_ver_3 .resp-tabs-list li span.tabs-text{
+    display: none;
+}
+
+.VerticalTab.tabs_ver_3  h2.title_contanier {
+	font-family: "Roboto", sans-serif;
+	font-size: 28px;
+	font-weight: 300;
+	color: #999;
+	text-transform: inherit;
+	margin-top: 0px;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	padding-top: 12px;
+	line-height: 3px;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.VerticalTab.tabs_ver_3 .resp-tab-content {
+    border: 0 !important;
+    padding: 33px 30px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+
+.VerticalTab.tabs_ver_3 p {
+	color: #999;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+
+/*
+--------------- Demo 4 ------------------
+*/
+
+.VerticalTab.tabs_ver_4.resp-vtabs ul.resp-tabs-list {
+    float: left;
+    width: 25%;
+	margin-top: 0 !important;
+	float: left;
+    width: 9%;
+    margin-bottom: 10px;
+}
+.VerticalTab.tabs_ver_4.resp-vtabs .resp-tabs-container {
+	padding: 0px;
+	background-color: #f4f4f4;
+	border: 0;
+	float: left;
+	width: 88%;
+	min-height: 250px;
+	border-radius: 4px;
+	clear: none;
+	border-radius: 0;
+	margin-left: 13px;
+}
+.VerticalTab.tabs_ver_4 .resp-tabs-list li {
+	display: block;
+	margin:  0;
+	list-style: none;
+	cursor: pointer;
+	float: none;
+	color: #fff;
+	padding: 17px !important;
+	font-size: 14px;
+	font-weight: 500;
+	margin-right: 0;
+	line-height: 24px;
+	border-radius: 0;
+	margin-bottom: 0 !important;
+	margin:  0 !important;
+	border: 0 !important;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+	text-align: center;
+}
+
+.VerticalTab.tabs_ver_4 .resp-tabs-list .resp-tab-active {
+    margin-bottom: 0px !important;
+    padding: 17px !important;
+    background-color: #f4f4f4 !important;
+	border: 0 !important;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+.VerticalTab.tabs_ver_4 .resp-tabs-list li:hover {
+    background-color: #f4f4f4 !important;
+	padding: 17px !important;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.VerticalTab.tabs_ver_4 .resp-tabs-list li i {
+	font-size: 22px;
+	-webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	-moz-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	display: inline-block;
+	cursor: pointer;
+	margin: 0;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	display: block;
+	color: #fff;
+	margin-bottom: 5px;
+	transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+
+}
+.VerticalTab.tabs_ver_4 .resp-tabs-list .resp-tab-active i ,
+.VerticalTab.tabs_ver_4 .resp-tabs-list li:hover i {
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.VerticalTab.tabs_ver_4 .resp-tabs-list li span.tabs-text {
+    display: block;
+}
+
+
+.VerticalTab.tabs_ver_4  h2.title_contanier {
+	font-family: "Roboto", sans-serif;
+	font-size: 28px;
+	font-weight: 300;
+	color: #999;
+	text-transform: inherit;
+	margin-top: 0px;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	padding-top: 12px;
+	line-height: 3px;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.VerticalTab.tabs_ver_4 .resp-tab-content {
+    border: 0 !important;
+    padding: 33px 30px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+
+.VerticalTab.tabs_ver_4 p {
+	color: #999;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+/*
+--------------- Demo 5 ------------------
+*/
+
+.VerticalTab.tabs_ver_5.resp-vtabs ul.resp-tabs-list {
+	margin-top: 0 !important;
+	float: right;
+    width: 9%;
+    margin-bottom: 10px;
+}
+.VerticalTab.tabs_ver_5.resp-vtabs .resp-tabs-container {
+	padding: 0px;
+	background-color: #f4f4f4;
+	border: 0;
+	float: left;
+	width: 88%;
+	min-height: 250px;
+	border-radius: 4px;
+	clear: none;
+	border-radius: 0;
+	margin-left: 13px;
+}
+.VerticalTab.tabs_ver_5 .resp-tabs-list li {
+	display: block;
+	margin:  0;
+	list-style: none;
+	cursor: pointer;
+	float: none;
+	color: #fff;
+	padding: 17px !important;
+	font-size: 14px;
+	font-weight: 500;
+	margin-right: 0;
+	line-height: 24px;
+	border-radius: 0;
+	margin-bottom: 0 !important;
+	margin:  0 !important;
+	border: 0 !important;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+	text-align: center;
+}
+
+.VerticalTab.tabs_ver_5 .resp-tabs-list .resp-tab-active {
+    margin-bottom: 0px !important;
+    padding: 17px !important;
+    background-color: #f4f4f4 !important;
+	border: 0 !important;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+.VerticalTab.tabs_ver_5 .resp-tabs-list li:hover {
+    background-color: #f4f4f4 !important;
+	padding: 17px !important;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.VerticalTab.tabs_ver_5 .resp-tabs-list li i {
+	font-size: 22px;
+	-webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	-moz-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	display: inline-block;
+	cursor: pointer;
+	margin: 0;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	display: block;
+	color: #fff;
+	margin-bottom: 5px;
+	transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+
+}
+
+.VerticalTab.tabs_ver_5 .resp-tabs-list li span.tabs-text {
+    display: block;
+}
+
+.VerticalTab.tabs_ver_5  h2.title_contanier {
+	font-family: "Roboto", sans-serif;
+	font-size: 28px;
+	font-weight: 300;
+	color: #999;
+	text-transform: inherit;
+	margin-top: 0px;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	padding-top: 12px;
+	line-height: 3px;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.VerticalTab.tabs_ver_5 .resp-tab-content {
+    border: 0 !important;
+    padding: 33px 30px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+
+.VerticalTab.tabs_ver_5 p {
+	color: #999;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+
+/*
+--------------- Demo 6 ------------------
+*/
+
+.VerticalTab.tabs_ver_6.resp-vtabs ul.resp-tabs-list {
+    float: left;
+    width: 25%;
+	margin-top: 0 !important;
+	float: left;
+    width: 9%;
+    margin-bottom: 10px;
+}
+.VerticalTab.tabs_ver_6.resp-vtabs .resp-tabs-container {
+	padding: 0px;
+	background-color: #f4f4f4;
+	border: 0;
+	float: left;
+	width: 88%;
+	min-height: 250px;
+	border-radius: 4px;
+	clear: none;
+	border-radius: 0;
+	margin-left: 13px;
+}
+.VerticalTab.tabs_ver_6 .resp-tabs-list li {
+	display: block;
+	margin:  0;
+	list-style: none;
+	cursor: pointer;
+	float: none;
+	color: #fff;
+	padding: 17px !important;
+	font-size: 14px;
+	font-weight: 500;
+	margin-right: 0;
+	line-height: 24px;
+	border-radius: 0;
+	margin-bottom: 0 !important;
+	margin:  0 !important;
+	border: 0 !important;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+	text-align: center;
+}
+
+.VerticalTab.tabs_ver_6 .resp-tabs-list .resp-tab-active {
+    margin-bottom: 0px !important;
+    padding: 17px !important;
+    background-color: #f4f4f4 !important;
+	border: 0 !important;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+.VerticalTab.tabs_ver_6 .resp-tabs-list li:hover {
+    background-color: #f4f4f4 !important;
+	padding: 17px !important;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.VerticalTab.tabs_ver_6 .resp-tabs-list li i {
+	font-size: 22px;
+	-webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	-moz-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	display: inline-block;
+	cursor: pointer;
+	margin: 0;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	display: block;
+	color: #fff;
+	margin-bottom: 5px;
+	transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+
+}
+
+.VerticalTab.tabs_ver_6 .resp-tabs-list li span.tabs-text {
+    display: block;
+}
+
+.VerticalTab.tabs_ver_6  h2.title_contanier {
+	font-family: "Roboto", sans-serif;
+	font-size: 28px;
+	font-weight: 300;
+	color: #999;
+	text-transform: inherit;
+	margin-top: 0px;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	padding-top: 12px;
+	line-height: 3px;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.VerticalTab.tabs_ver_6 .resp-tab-content {
+    border: 0 !important;
+    padding: 33px 30px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+
+.VerticalTab.tabs_ver_6 p {
+	color: #999;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+/*
+=====================================================
+--------------- 5. Tabs Responsive ------------------
+=====================================================
+*/
+
+
+h2.resp-accordion {
+	font-size: 17px;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 0.32em 0em 0.32em 0.70em;
+	margin: 0;
+	list-style: none;
+	cursor: pointer;
+	background: #303030;
+	border: 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+	line-height: 0px;
+	cursor: pointer;
+	padding: 10px 15px;
+	border-left: 0 !important;
+	border-right: 0 !important;
+}
+h2.resp-tab-active {
+	border: 0 !important;
+	border-bottom: 1px solid #ccc !important;
+	margin-bottom: 0 !important;
+	padding: 10px 15px !important;
+	background: rgba(59, 89, 152, 0.8) !important;
+	border-left: 0 !important;
+	border-right: 0 !important;
+}
+h2.resp-accordion:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+h2.resp-accordion .tabs-text {
+    position: relative;
+    top: -3px;
+    left: 10px;
+	font-size: 14px;
+}
+
+.arrow-tabs {
+    float: right;
+    margin-top: 10px;
+    font-size: 18px !important;
+}
+
+h2.resp-accordion .fc_icons {
+	font-size: 22px;
+	-webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	-moz-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	display: inline-block;
+	cursor: pointer;
+	margin: 0;
+	width: 42px !important;
+	height: 42px !important;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	line-height: 43px;
+	background: #fff !important;
+}
+
+
+
+@media only screen and (max-width: 768px){
+	.resp-vtabs .resp-tabs-container {
+		border: none !important;
+		float: none !important;
+		width: 100% !important;
+		min-height: 250px !important;
+		clear: none !important;
+	}
+	.VerticalTab.tabs_ver_2.resp-vtabs .resp-tabs-container,
+	.VerticalTab.tabs_ver_3.resp-vtabs .resp-tabs-container,
+	.VerticalTab.tabs_ver_4.resp-vtabs .resp-tabs-container,
+	.VerticalTab.tabs_ver_5.resp-vtabs .resp-tabs-container,
+	.VerticalTab.tabs_ver_6.resp-vtabs .resp-tabs-container	{
+		margin-left: 0;
+	}
+}
+
+}
+
+
+
+
+
+/*
+=====================================================
+------------------- 6. Footer -----------------------
+=====================================================
+*/
+
+.site-footer {
+  background-color: #222222;
+  border-top: 1px solid #303030;
+  padding: 42px 0;
+  font-family: "Dosis", sans-serif;
+}
+.site-footer .copyright {
+  font-size: 16px;
+  color: #757575;
+}
+.site-footer .copyright span a {
+  color: #f3f3f3;
+}
+
+.site-footer .credit a {
+  color: #f3f3f3;
+}
+
+

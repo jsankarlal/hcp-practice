@@ -1,0 +1,199 @@
+/* button Styles - Starts*/
+.btn{
+    &.btn-default{
+        
+    }
+    &.btn-red{
+        background:$celergen-red;
+        color: #fff;
+    }
+    &.btn-blue{
+        background:$celergen-blue;
+        color: #fff;
+    }
+}
+
+/* button Styles - Ends*/
+
+.popup-overlay{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+    display: none;
+    top:0;
+    left: 0;
+    z-index: 5;
+}
+
+/* Modal Styles - Starts*/
+
+.modal-dialog {
+    margin: 20px auto;
+}
+
+#popup-template {
+    .modal-dialog{
+        margin-top:90px;
+        overflow-y: initial;
+        
+        .modal-body{
+            max-height: calc(100vh - 150px);
+            min-height:400px;
+            overflow-y: auto;
+        }
+        .modal-footer{
+            padding:0px 5px 5px 5px;
+            border-top:none;
+        }
+    }
+}
+
+.popup-overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.5);
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+
+/* Modal Styles - Ends*/
+
+/* Authentication-modal  - Starts*/
+body.authentication-modal-open {
+    .authentication-modal {
+        z-index: 33002;
+        display: block;
+        opacity: 1;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 33002;
+        -webkit-overflow-scrolling: touch;
+        outline: 0;
+        .modal-dialog {
+            width: 55%\9;
+            -webkit-transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+            -o-transform: translate(0, 0);
+            transform: translate(0, 0);
+        }
+    }
+
+    .popup-overlay {
+        display: block;
+        background: #000;
+        opacity: 1;
+        z-index: 33000;
+    }
+}
+
+#authentication-modal{
+    .modal-footer {
+        .btn {
+//            margin-top: 15px;
+            white-space: normal;
+        }
+    }
+}
+
+/* Authentication-modal  - Ends*/
+
+.form-group {
+    margin-bottom: 15px;
+    .form-control{
+        margin-bottom: 10px;
+    }
+}
+
+/* Celergen Hero Section - starts*/
+
+.hero-middle-content{
+    z-index:5;
+    position: absolute;
+    width:100%;
+    top: 0;
+    .hero-image-section{
+        margin-top:100px;        
+        width:70%;
+        margin-left: auto;
+        margin-right: auto;
+        .image-column{
+            text-align:right;
+        }
+        .text-column{
+            padding-left:50px;
+            margin-top:50px;
+        }
+        .hero-btn-group{
+            margin-top: 30px;
+            .btn{
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+/* Celergen Hero Section  - Ends*/
+.navbar-nav.nav-justified > li {
+    float: none;
+}
+.nav-justified > li, .nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+}
+
+/* Celergen Video Section - starts*/
+
+.video-box {
+    margin-right: auto;
+    margin-left: auto;
+    max-width:854px;
+}
+
+
+/* Celergen Video Section  - Ends*/
+@media screen and (max-width: $screen-xs-max){
+    #popup-template .modal-dialog{
+        margin-top:50px;
+        .modal-body {
+            max-height: calc(100vh - 130px);
+            min-height:250px;
+        }
+    }
+
+    .authentication-modal .modal-dialog {
+        margin:10px;
+    }
+    .hero-middle-content{
+        position: relative;
+        width:100%;
+        .hero-image-section{
+            margin-top:50px;        
+            width:70%;
+            margin-left: auto;
+            margin-right: auto;
+            .image-column{
+                text-align:center;
+            }
+            .text-column{
+                padding-left:15px;
+                margin-top:15px;
+            }
+            .hero-btn-group{
+                margin-top: 15px;
+                .btn{
+                    width:100%;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
