@@ -229,7 +229,9 @@ body.authentication-modal-open {
 .carousel-indicators li {
     border: 1px solid #ccc;
 }
-
+a, a[data-popup]{
+    cursor:pointer;
+}
 .carousel-control {
 //    color: #091e33;
     width: 5%;

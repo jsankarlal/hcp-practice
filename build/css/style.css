@@ -15289,30 +15289,35 @@ body.authentication-modal-open .popup-overlay {
   border: 1px solid #ccc;
 }
 
-/* line 233, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 232, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+a, a[data-popup] {
+  cursor: pointer;
+}
+
+/* line 235, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .carousel-control {
   width: 5%;
   color: #fff;
 }
 
-/* line 239, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 241, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .carousel-control:hover, .carousel-control:focus {
   color: #31708f;
 }
 
-/* line 243, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 245, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .carousel-control.left, .carousel-control.right {
   background-image: none;
 }
 
-/* line 247, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 249, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .media-object {
   margin: auto;
   margin-top: 15%;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 253, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 255, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   .media-object {
     margin-top: 0;
   }
@@ -15320,50 +15325,50 @@ body.authentication-modal-open .popup-overlay {
 
 /* Carousel - Ends */
 @media screen and (max-width: 767px) {
-  /* line 259, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 261, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   #popup-template .modal-dialog {
     margin-top: 50px;
   }
-  /* line 261, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 263, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   #popup-template .modal-dialog .modal-body {
     max-height: calc(100vh - 130px);
     min-height: 250px;
   }
-  /* line 267, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 269, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   .authentication-modal .modal-dialog {
     margin: 10px;
   }
-  /* line 270, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 272, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   .hero-middle-content {
     position: relative;
     width: 100%;
   }
-  /* line 273, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 275, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   .hero-middle-content .hero-image-section {
     margin-top: 50px;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 278, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 280, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   .hero-middle-content .hero-image-section .image-column {
     text-align: center;
   }
-  /* line 280, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 282, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   .hero-middle-content .hero-image-section .image-column img {
     clear: both;
   }
-  /* line 284, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 286, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   .hero-middle-content .hero-image-section .text-column {
     padding-left: 15px;
     margin-top: 15px;
     text-align: center;
   }
-  /* line 289, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 291, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   .hero-middle-content .hero-image-section .hero-btn-group {
     margin-top: 15px;
   }
-  /* line 291, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 293, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   .hero-middle-content .hero-image-section .hero-btn-group .btn {
     width: 100%;
     margin-bottom: 10px;
