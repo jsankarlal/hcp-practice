@@ -30490,27 +30490,28 @@ $(document).on('click', function (e) {
             });
 //jscs:disable
             scaleBannerVideoSize(element);
-            /* affix the navbar after scroll below header */
+            /* affix the navbar after scroll below header 
             $('#nav').affix({
                   offset: {
                     top: $('.homepage-hero-module').height()
                   }
-            });	
+            });	*/
 
             /* highlight the top nav as scrolling occurs */
-            $('body').scrollspy({ target: '#nav' })
+           /* $('body').scrollspy({ target: '#nav' })*/
 
-            /* smooth scrolling for scroll to top */
+            /* smooth scrolling for scroll to top 
             $('.scroll-top').click(function(){
               $('body,html').animate({scrollTop:0},1000);
-            })
+            })*/
 
             /* smooth scrolling for nav sections */
-            $('#nav .navbar-nav li>a').click(function(){
+           /* $('#nav .navbar-nav li>a').click(function(){
               var link = $(this).attr('href');
-              var posi = $(link).offset().top+20;
-              $('body,html').animate({scrollTop:posi},700);
-            })
+              var posi = $(link).offset().top - $('#global-navigation').height() - $('#nav').height();
+              event.preventDefault();
+              $('body,html').animate({scrollTop:top}, 1500);
+            });*/
 //jscs:enable
         }
 
@@ -30802,11 +30803,32 @@ jQuery(document).ready(function() {
 (function(global) {
     function G3() {
     };
-
+    
+    G3.prototype.validateForm = function(hash) { 
+        var _this = this;
+        $('#popup-template').find('.modal-title').html('Thanks for contacting us');
+        $('#popup-template').find('.modal-body').html('<p> We have Received your query. We will get back to you shortly</p>');
+        $('#contact-us-form.collapse').collapse('toggle');
+        $('#popup-template').modal('show');
+        
+    };
+    
+    G3.prototype.smoothScroll = function(hash) {
+        var _this = this,
+            hash = hash || location.hash,
+            position = 0,
+            navigationHeight = $('#global-navigation').height();
+        
+        if (hash != '' && hash != 'undefined') {
+            position = $(hash).offset().top - navigationHeight;
+            $('body,html').animate({scrollTop: position}, 1500);
+        }
+    }
+    
     G3.prototype.bindEvents = function() {
         var _this = this,
-            $videoPopup = $('#video-popup-template');
-
+            $videoPopup = $('#video-popup-template'),
+            $formelement = '';
         //on resize event
         _this.$window.on('resize', function() {
            
@@ -30822,6 +30844,20 @@ jQuery(document).ready(function() {
              $('body,html').animate({scrollTop:0}, 1000);
          });
          
+         $('body').scrollspy({target: '#nav'});
+         
+         $('#contact-us-submit').on('click', function(event) {
+             $formelement =  $('#contact-us-form');
+             _this.validateForm($formelement);
+         });
+         
+         /* smooth scrolling for nav sections */
+          $('#nav .navbar-nav li>a').click(function(event) {
+              var link = $(this).attr('href');
+              _this.smoothScroll(link);
+              event.preventDefault();
+          });
+         
          $('#video-popup-template').on('hide.bs.modal', function(event) {
             $videoPopup.find('.modal-body').html('');
          });
@@ -30830,7 +30866,7 @@ jQuery(document).ready(function() {
              var videoPath = $(this).data('video-popup') || '',
                  iframeElement = '';
              if (videoPath != '' && videoPath != 'undefined') {
-                 iframeElement = '<iframe width="100%" height="360" src="' + videoPath + '" frameborder="0" allowfullscreen></iframe>';
+                 iframeElement = '<iframe width="100%" src="' + videoPath + '" frameborder="0" allowfullscreen></iframe>';
                  $videoPopup.find('.modal-body').html(iframeElement);
                  $videoPopup.modal('show');
              }
@@ -31194,6 +31230,7 @@ jQuery(document).ready(function() {
         _this.$window = $(window), 
         _this.$html = $('html'),
         _this.$body = $('body');
+        _this.smoothScroll(location.hash);
         _this.bindEvents();
        //_this.initializeCarousel();
     };

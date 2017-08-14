@@ -151,7 +151,25 @@ body.authentication-modal-open {
     display: table-cell;
     width: 1%;
 }
-
+.modal{
+    .modal-header .close {
+        margin-top: 0px;
+        position: absolute;
+        right: 12px;
+        top: 10px;
+        font-size: 30px;
+    }
+}
+#video-popup-template {
+    .modal-body{
+        height:70vh;
+    }
+}
+.modal-footer{
+    &.text-center{
+        text-align:center;
+    }
+}
 /* Celergen Video Section - starts*/
 
 .video-box {
@@ -180,6 +198,7 @@ body.authentication-modal-open {
     right: 0;
     left: 0;
     z-index: 300;
+    bottom: 20px;
     li {
         display: inline-block;
         width: 10px;
@@ -257,6 +276,67 @@ a, a[data-popup]{
     }
 }
 /* Carousel - Ends */
+
+/* contact us form  - starts */
+#contact-us-form{
+    position: fixed;
+    z-index: 1400;
+    right: 0;
+    bottom: 50px;
+    width: 40%;
+    background: rgba(0, 19, 29, .9);
+    padding: 10px 20px 10px;
+    webkit-box-shadow: 9px 9px 0px rgba(50, 50, 50, 0.31);
+    -moz-box-shadow: 9px 9px 0px rgba(50, 50, 50, 0.31);
+    box-shadow: 0px 4px 4px rgba(50, 50, 50, 0.9);
+    border-radius:4px;
+    color:#fff;
+    h2{
+        margin-top:10px;
+    }
+    input{
+        color:#333;
+    }
+
+    .btn{
+        float:right;
+        margin-left:20px;
+        margin-bottom:10px;
+        
+        &.btn-default{
+            border:1px solid #fff;
+        }
+        &.btn-red{
+            border:1px solid #ba1c31;
+        }
+        &:hover, &:focus{
+            border:1px solid #00131d;
+        }
+    }
+}
+@media screen and (max-width: $screen-xs-max){
+ #contact-us-form{
+        width:100%;
+        right: 0;
+        bottom:0;
+        top:0;
+        left:0;
+    }
+}
+
+@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+ #contact-us-form{
+    width:50%;
+    }
+}
+
+@media screen and (min-width: $screen-md-min){
+ #contact-us-form{
+    width:30%;
+    }
+}
+/* contact us form - Ends */
+
 @media screen and (max-width: $screen-xs-max){
     #popup-template .modal-dialog{
         margin-top:50px;
