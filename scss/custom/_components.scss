@@ -164,6 +164,9 @@ body.authentication-modal-open {
 #video-popup-template {
     .modal-body{
         height:70vh;
+        iframe{
+            height:70vh;
+        }
     }
 }
 .modal-footer{
