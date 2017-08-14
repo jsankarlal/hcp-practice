@@ -13068,10 +13068,9 @@ footer #footer-copyright, .footer #footer-copyright {
 }
 
 /* line 46, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_footer.scss */
-.scroll-top {
+.fixed-buttons-group .scroll-top, .fixed-buttons-group .contact-us-form {
   position: fixed;
   bottom: 0;
-  right: -60px;
   z-index: 100;
   background: rgba(186, 28, 49, 0.5);
   font-size: 20px;
@@ -13098,78 +13097,45 @@ footer #footer-copyright, .footer #footer-copyright {
   transition: all .2s ease-in-out;
 }
 
-/* line 75, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_footer.scss */
-.scroll-top a {
+/* line 74, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_footer.scss */
+.fixed-buttons-group .scroll-top a, .fixed-buttons-group .contact-us-form a {
   position: relative;
   display: block;
   padding: 8px 12px;
 }
 
-/* line 79, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_footer.scss */
-.scroll-top a:hover, .scroll-top a:focus {
+/* line 78, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_footer.scss */
+.fixed-buttons-group .scroll-top a:hover, .fixed-buttons-group .scroll-top a:focus, .fixed-buttons-group .contact-us-form a:hover, .fixed-buttons-group .contact-us-form a:focus {
   text-decoration: none;
 }
 
-/* line 82, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_footer.scss */
-.scroll-top a:link, .scroll-top a:visited {
+/* line 81, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_footer.scss */
+.fixed-buttons-group .scroll-top a:link, .fixed-buttons-group .scroll-top a:visited, .fixed-buttons-group .contact-us-form a:link, .fixed-buttons-group .contact-us-form a:visited {
   color: #fff;
 }
 
-/* line 86, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_footer.scss */
-.scroll-top.active {
-  right: 15px;
+/* line 87, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_footer.scss */
+.fixed-buttons-group .scroll-top {
+  right: -60px;
 }
 
 /* line 91, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_footer.scss */
-.contact-us-form {
-  position: fixed;
-  bottom: 0;
-  right: 70px;
-  z-index: 100;
-  background: rgba(186, 28, 49, 0.5);
-  font-size: 20px;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  color: #fff;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  -moz-perspective: 1000;
-  -ms-perspective: 1000;
-  perspective: 1000;
-  -webkit-transform: translateZ(0px);
-  -moz-transform: translateZ(0px);
-  -ms-transform: translateZ(0px);
-  -o-transform: translateZ(0px);
-  transform: translateZ(0px);
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -ms-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+.fixed-buttons-group .contact-us-form {
+  right: 10px;
 }
 
-/* line 120, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_footer.scss */
-.contact-us-form a {
-  position: relative;
-  display: block;
-  padding: 8px 12px;
+/* line 96, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_footer.scss */
+.fixed-buttons-group.scroll-top-active .scroll-top {
+  right: 10px;
 }
 
-/* line 124, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_footer.scss */
-.contact-us-form a:hover, .contact-us-form a:focus {
-  text-decoration: none;
-}
-
-/* line 127, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_footer.scss */
-.contact-us-form a:link, .contact-us-form a:visited {
-  color: #fff;
+/* line 99, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_footer.scss */
+.fixed-buttons-group.scroll-top-active .contact-us-form {
+  right: 65px;
 }
 
 @media (max-width: 767px) {
-  /* line 135, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_footer.scss */
+  /* line 110, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_footer.scss */
   footer .mobile-center, .footer .mobile-center {
     clar: both;
     text-align: center;
@@ -15120,26 +15086,30 @@ body {
   margin: 20px auto;
 }
 
-/* line 36, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 35, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+#popup-template {
+  padding-right: 0px !important;
+}
+
+/* line 37, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 #popup-template .modal-dialog {
   margin-top: 90px;
   overflow-y: initial;
 }
 
-/* line 40, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 41, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 #popup-template .modal-dialog .modal-body {
   max-height: calc(100vh - 150px);
-  min-height: 400px;
+  min-height: 250px;
   overflow-y: auto;
 }
 
-/* line 45, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 46, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 #popup-template .modal-dialog .modal-footer {
-  padding: 0px 5px 5px 5px;
-  border-top: none;
+  padding: 5px 5px 5px 5px;
 }
 
-/* line 52, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 53, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .popup-overlay {
   position: fixed;
   height: 100%;
@@ -15153,7 +15123,7 @@ body {
 
 /* Modal Styles - Ends*/
 /* Authentication-modal  - Starts*/
-/* line 68, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 69, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 body.authentication-modal-open .authentication-modal {
   z-index: 33002;
   display: block;
@@ -15169,7 +15139,7 @@ body.authentication-modal-open .authentication-modal {
   outline: 0;
 }
 
-/* line 81, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 82, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 body.authentication-modal-open .authentication-modal .modal-dialog {
   width: 55%\9;
   -webkit-transform: translate(0, 0);
@@ -15178,7 +15148,7 @@ body.authentication-modal-open .authentication-modal .modal-dialog {
   transform: translate(0, 0);
 }
 
-/* line 90, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 91, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 body.authentication-modal-open .popup-overlay {
   display: block;
   background: #000;
@@ -15186,29 +15156,29 @@ body.authentication-modal-open .popup-overlay {
   z-index: 33000;
 }
 
-/* line 100, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 101, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 #authentication-modal .modal-footer .btn {
   white-space: normal;
 }
 
 /* Authentication-modal  - Ends*/
-/* line 109, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 110, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .form-group {
   margin-bottom: 15px;
 }
 
-/* line 111, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 112, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .form-group .form-control {
   margin-bottom: 10px;
 }
 
 /* Celergen Hero Section - starts*/
-/* line 117, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 118, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .homepage-hero-module {
   overflow: hidden;
 }
 
-/* line 120, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 121, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .hero-middle-content {
   z-index: 5;
   position: absolute;
@@ -15216,7 +15186,7 @@ body.authentication-modal-open .popup-overlay {
   top: 0;
 }
 
-/* line 125, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 126, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .hero-middle-content .hero-image-section {
   margin-top: 100px;
   width: 70%;
@@ -15224,40 +15194,40 @@ body.authentication-modal-open .popup-overlay {
   margin-right: auto;
 }
 
-/* line 130, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 131, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .hero-middle-content .hero-image-section .image-column {
   text-align: right;
 }
 
-/* line 133, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 134, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .hero-middle-content .hero-image-section .text-column {
   padding-left: 50px;
   margin-top: 50px;
 }
 
-/* line 137, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 138, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .hero-middle-content .hero-image-section .hero-btn-group {
   margin-top: 30px;
 }
 
-/* line 139, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 140, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .hero-middle-content .hero-image-section .hero-btn-group .btn {
   margin-right: 20px;
 }
 
 /* Celergen Hero Section  - Ends*/
-/* line 147, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 148, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .navbar-nav.nav-justified > li {
   float: none;
 }
 
-/* line 150, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 151, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .nav-justified > li, .nav-tabs.nav-justified > li, .nav-tabs.nav-justified > li {
   display: table-cell;
   width: 1%;
 }
 
-/* line 155, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 156, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .modal .modal-header .close {
   margin-top: 0px;
   position: absolute;
@@ -15266,18 +15236,18 @@ body.authentication-modal-open .popup-overlay {
   font-size: 30px;
 }
 
-/* line 164, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 165, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 #video-popup-template .modal-body {
   height: 70vh;
 }
 
-/* line 169, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 170, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .modal-footer.text-center {
   text-align: center;
 }
 
 /* Celergen Video Section - starts*/
-/* line 175, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 176, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .video-box {
   margin-right: auto;
   margin-left: auto;
@@ -15286,18 +15256,18 @@ body.authentication-modal-open .popup-overlay {
 
 /* Celergen Video Section  - Ends*/
 @media screen and (min-width: 991px) {
-  /* line 186, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 187, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   .hero-middle-content .hero-image-section .image-column {
     text-align: center;
   }
-  /* line 188, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 189, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   .hero-middle-content .hero-image-section .image-column img {
     float: right;
   }
 }
 
 /* Carousel Section - starts*/
-/* line 197, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 198, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .carousel-indicators {
   right: 0;
   left: 0;
@@ -15305,7 +15275,7 @@ body.authentication-modal-open .popup-overlay {
   bottom: 20px;
 }
 
-/* line 202, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 203, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .carousel-indicators li {
   display: inline-block;
   width: 10px;
@@ -15319,7 +15289,7 @@ body.authentication-modal-open .popup-overlay {
   border-radius: 10px;
 }
 
-/* line 214, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 215, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .carousel-indicators .active {
   width: 12px;
   height: 12px;
@@ -15327,18 +15297,18 @@ body.authentication-modal-open .popup-overlay {
   background-color: #fff;
 }
 
-/* line 221, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 222, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .carousel-indicators .active {
   background: #31708f;
 }
 
-/* line 224, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 225, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .content {
   margin-top: 20px;
   /*background-color:#091e33;*/
 }
 
-/* line 229, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 230, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .adjust1 {
   float: left;
   width: 100%;
@@ -15347,52 +15317,52 @@ body.authentication-modal-open .popup-overlay {
   border-radius: 20px;
 }
 
-/* line 237, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 238, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .adjust2 {
   margin: 0;
   color: #ffffff;
 }
 
-/* line 242, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 243, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .adjust3 {
   margin: 0;
   color: #ffffff;
 }
 
-/* line 248, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 249, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .carousel-indicators li {
   border: 1px solid #ccc;
 }
 
-/* line 251, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 252, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 a, a[data-popup] {
   cursor: pointer;
 }
 
-/* line 254, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 255, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .carousel-control {
   width: 5%;
   color: #fff;
 }
 
-/* line 260, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 261, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .carousel-control:hover, .carousel-control:focus {
   color: #31708f;
 }
 
-/* line 264, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 265, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .carousel-control.left, .carousel-control.right {
   background-image: none;
 }
 
-/* line 268, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 269, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 .media-object {
   margin: auto;
   margin-top: 15%;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 274, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 275, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   .media-object {
     margin-top: 0;
   }
@@ -15400,7 +15370,7 @@ a, a[data-popup] {
 
 /* Carousel - Ends */
 /* contact us form  - starts */
-/* line 281, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 282, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 #contact-us-form {
   position: fixed;
   z-index: 1400;
@@ -15416,40 +15386,40 @@ a, a[data-popup] {
   color: #fff;
 }
 
-/* line 294, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 295, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 #contact-us-form h2 {
   margin-top: 10px;
 }
 
-/* line 297, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 298, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 #contact-us-form input {
   color: #333;
 }
 
-/* line 301, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 302, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 #contact-us-form .btn {
   float: right;
   margin-left: 20px;
   margin-bottom: 10px;
 }
 
-/* line 306, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 307, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 #contact-us-form .btn.btn-default {
   border: 1px solid #fff;
 }
 
-/* line 309, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 310, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 #contact-us-form .btn.btn-red {
   border: 1px solid #ba1c31;
 }
 
-/* line 312, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+/* line 313, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
 #contact-us-form .btn:hover, #contact-us-form .btn:focus {
   border: 1px solid #00131d;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 318, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 319, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   #contact-us-form {
     width: 100%;
     right: 0;
@@ -15460,14 +15430,14 @@ a, a[data-popup] {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 328, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 329, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   #contact-us-form {
     width: 50%;
   }
 }
 
 @media screen and (min-width: 992px) {
-  /* line 334, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 335, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   #contact-us-form {
     width: 30%;
   }
@@ -15475,50 +15445,50 @@ a, a[data-popup] {
 
 /* contact us form - Ends */
 @media screen and (max-width: 767px) {
-  /* line 341, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 342, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   #popup-template .modal-dialog {
     margin-top: 50px;
   }
-  /* line 343, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 344, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   #popup-template .modal-dialog .modal-body {
     max-height: calc(100vh - 130px);
     min-height: 250px;
   }
-  /* line 349, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 350, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   .authentication-modal .modal-dialog {
     margin: 10px;
   }
-  /* line 352, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 353, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   .hero-middle-content {
     position: relative;
     width: 100%;
   }
-  /* line 355, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 356, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   .hero-middle-content .hero-image-section {
     margin-top: 50px;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 360, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 361, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   .hero-middle-content .hero-image-section .image-column {
     text-align: center;
   }
-  /* line 362, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 363, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   .hero-middle-content .hero-image-section .image-column img {
     clear: both;
   }
-  /* line 366, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 367, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   .hero-middle-content .hero-image-section .text-column {
     padding-left: 15px;
     margin-top: 15px;
     text-align: center;
   }
-  /* line 371, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 372, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   .hero-middle-content .hero-image-section .hero-btn-group {
     margin-top: 15px;
   }
-  /* line 373, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
+  /* line 374, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_components.scss */
   .hero-middle-content .hero-image-section .hero-btn-group .btn {
     width: 100%;
     margin-bottom: 10px;

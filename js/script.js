@@ -371,11 +371,11 @@
     
     G3.prototype.showBackToTop = function() {
         var _this = this,
-            $floatingBackCta = $('.scroll-top');
+            $floatingBackCta = $('.fixed-buttons-group');
         if (_this.$window.scrollTop() > 100) { 
-            $floatingBackCta.addClass('active');
+            $floatingBackCta.addClass('scroll-top-active');
         } else { 
-            $floatingBackCta.removeClass('active');
+            $floatingBackCta.removeClass('scroll-top-active');
         }
     }
     

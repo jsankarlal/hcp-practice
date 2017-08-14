@@ -33,18 +33,19 @@
 }
 
 #popup-template {
+    padding-right:0px !important;
     .modal-dialog{
         margin-top:90px;
         overflow-y: initial;
         
         .modal-body{
             max-height: calc(100vh - 150px);
-            min-height:400px;
+            min-height:250px;
             overflow-y: auto;
         }
         .modal-footer{
-            padding:0px 5px 5px 5px;
-            border-top:none;
+            padding:5px 5px 5px 5px;
+         //   border-top:none;
         }
     }
 }

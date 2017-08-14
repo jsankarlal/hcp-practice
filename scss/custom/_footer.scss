@@ -42,93 +42,68 @@ footer, .footer{
       color:#fff;
     }
 }
+.fixed-buttons-group{
+    .scroll-top, .contact-us-form {
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+        //background: $celergen-red; //rgb(186, 28, 49);
+        background: rgba(186, 28, 49, .5);
+        font-size: 20px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        color:#fff;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-perspective: 1000;
+        -moz-perspective: 1000;
+        -ms-perspective: 1000;
+        perspective: 1000;
+        -webkit-transform: translateZ(0px);
+        -moz-transform: translateZ(0px);
+        -ms-transform: translateZ(0px);
+        -o-transform: translateZ(0px);
+        transform: translateZ(0px);
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        a {
+            position: relative;
+            display: block;
+            padding: 8px 12px;
+            &:hover, &:focus {
+                text-decoration: none;
+            }
+            &:link, &:visited {
+                color: #fff;
+            }
+        }
+        
+    }
+    .scroll-top {
+        right: -60px;
+        
+    }
+    .contact-us-form {
+        right: 10px;
+    }
 
-.scroll-top {
-    position: fixed;
-    bottom: 0;
-    right: -60px;
-    z-index: 100;
-    //background: $celergen-red; //rgb(186, 28, 49);
-    background: rgba(186, 28, 49, .5);
-    font-size: 20px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    color:#fff;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    -moz-perspective: 1000;
-    -ms-perspective: 1000;
-    perspective: 1000;
-    -webkit-transform: translateZ(0px);
-    -moz-transform: translateZ(0px);
-    -ms-transform: translateZ(0px);
-    -o-transform: translateZ(0px);
-    transform: translateZ(0px);
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    a {
-        position: relative;
-        display: block;
-        padding: 8px 12px;
-        &:hover, &:focus {
-            text-decoration: none;
+    &.scroll-top-active{
+        .scroll-top{
+            right: 10px;
         }
-        &:link, &:visited {
-            color: #fff;
+        .contact-us-form {
+            right: 65px;
         }
     }
-    &.active{
-        right: 15px;
-    }
+    
+    
 }
 
-.contact-us-form {
-    position: fixed;
-    bottom: 0;
-    right: 70px;
-    z-index: 100;
-    //background: $celergen-red; //rgb(186, 28, 49);
-    background: rgba(186, 28, 49, .5);
-    font-size: 20px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    color:#fff;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    -moz-perspective: 1000;
-    -ms-perspective: 1000;
-    perspective: 1000;
-    -webkit-transform: translateZ(0px);
-    -moz-transform: translateZ(0px);
-    -ms-transform: translateZ(0px);
-    -o-transform: translateZ(0px);
-    transform: translateZ(0px);
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    a {
-        position: relative;
-        display: block;
-        padding: 8px 12px;
-        &:hover, &:focus {
-            text-decoration: none;
-        }
-        &:link, &:visited {
-            color: #fff;
-        }
-    }
-}
 
 @media (max-width: $screen-xs-max) {
 	footer, .footer{
