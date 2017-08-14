@@ -73,7 +73,8 @@
          
          $(document).on('submit', '.authentication-form', function(event) {
              //$(this).find('.authentication-modal-submit').trigger('click');
-             _this.submitAuthenticateForm();
+            event.preventDefault();
+             _this.submitAuthenticateForm(location.hash);
          });
          
          $(document).on('click', '.authentication-modal-submit', function(event) {
@@ -364,11 +365,6 @@
          //jscs:enable
     };
     
-    G3.prototype.submitAuthenticateForm = function() {
-        var _this = this;
-            
-    };
-    
     G3.prototype.showBackToTop = function() {
         var _this = this,
             $floatingBackCta = $('.fixed-buttons-group');
@@ -379,13 +375,14 @@
         }
     }
     
-    G3.prototype.submitAuthenticateForm = function() {
+    G3.prototype.submitAuthenticateForm = function(hash) {
         var _this = this,
             user = $('.authentication-text-field').val()
             pass = $('.authentication-password-field').val();
         if (user === 'g3admin' && pass === 'Designer') {
             _this.$body.removeClass('authentication-modal-open');
             $('#authentication-modal').hide();
+            _this.smoothScroll(hash);
         }
 
     };

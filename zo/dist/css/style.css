@@ -13072,7 +13072,7 @@ footer #footer-copyright, .footer #footer-copyright {
   position: fixed;
   bottom: 0;
   z-index: 100;
-  background: rgba(186, 28, 49, 0.5);
+  background: #ba1c31;
   font-size: 20px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -15004,16 +15004,17 @@ body {
   color: #333333;
   font-size: 16px;
   line-height: 120%;
+  margin-bottom: 5px;
 }
 
 /* + icon before the accordion title */
-/* line 78, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_accordion.scss */
+/* line 79, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_accordion.scss */
 .accordion-section-title.active:after, .accordionTitleActive:before, .accordionTitle.is-expanded:before {
   -webkit-transform: rotate(-225deg);
   transform: rotate(-225deg);
 }
 
-/* line 82, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_accordion.scss */
+/* line 83, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_accordion.scss */
 .accordion-section-title:after, .accordion__Heading:before {
   content: "+";
   font-size: 1.5em;
