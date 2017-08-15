@@ -1,6 +1,6 @@
 //header.scss
 .navbar-fixed-top-margin{
-    margin-top: 116px;
+    margin-top: 115px;
 }
 
 #global-navigation{
@@ -100,9 +100,12 @@
 	
 
 }
-@media (min-width: $screen-sm-min) {
+@media (min-width: 672px) {
     .navbar {
        border-radius: 0px;
+    }
+    .navbar-fixed-top-margin {
+        margin-top: 100px;
     }
 }
 
@@ -116,9 +119,6 @@
      }
     #nav.affix {
         top: 50px;
-    }
-    .navbar-fixed-top-margin{
-        margin-bottom: 50px;
     }
     /*.video-container{
         display:none;

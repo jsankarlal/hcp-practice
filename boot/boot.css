@@ -117,7 +117,7 @@ h1 {
   }
 }
 .navbar-nav {
-  margin: 1px 1px; 
+    margin: 0px; 
 }  
   
 /* customize nav style */

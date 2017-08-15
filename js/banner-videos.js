@@ -1,16 +1,31 @@
-        $(document).ready(function() {
-            scaleVideoContainer();
+    $(document).ready(function() {
+         var windowWidth = $(window).width();
+          if (windowWidth > 991) {
+              insertVideoElement();
+              scaleVideoContainer();
            // initBannerVideoSize('.video-container .filter');
             initBannerVideoSize('.video-container video');
-            $(window).on('resize', function() {
-                scaleVideoContainer();
-                scaleBannerVideoSize('.video-container .poster img');
-             //   scaleBannerVideoSize('.video-container .filter');
-                scaleBannerVideoSize('.video-container video');
-            });
+          }
 
-        });
+          $(window).on('resize', function() {
+              windowWidth = $(window).width();
+              if (windowWidth > 991) {
+                  insertVideoElement();
+                  scaleVideoContainer();
+             // initBannerVideoSize('.video-container .filter');
+                  initBannerVideoSize('.video-container video');
+                  scaleBannerVideoSize('.video-container video');
+              }
+          });
+    });
 
+        function insertVideoElement() {
+               var  videoEl = '<video autoplay="" loop="" class="fillWidth video-container visible-md visible-lg">' 
+                   + '<source src="build/assets/videos/snowfall/snowfall.mp4" type="video/mp4">'
+                   + 'Your browser does not support the video tag. I suggest you upgrade your browser.</video>';
+               $('.hero-video-banner').html(videoEl);
+        }
+        
         function scaleVideoContainer() {
             var height = $(window).height() + 5,
                 unitHeight = parseInt(height) + 'px';
