@@ -287,7 +287,6 @@ a, a[data-popup]{
     z-index: 1400;
     right: 0;
     bottom: 40px;
-    width: 40%;
     background: rgba(0, 19, 29, .9);
     padding: 10px 10px 10px;
     webkit-box-shadow: 9px 9px 0px rgba(50, 50, 50, 0.31);
@@ -358,7 +357,6 @@ a, a[data-popup]{
 @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
     #contact-us-form{
         width:35%;
-        
         label{
             display:none;
         }
