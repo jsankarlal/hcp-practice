@@ -30816,7 +30816,11 @@ jQuery(document).ready(function() {
          _this.$window.on('scroll', function() {
              _this.showBackToTop.call(_this);
          });
-         
+
+         $(document).click(function() {
+             $('#contact-us-form.collapse').collapse('hide');
+         });
+
          $('.scroll-top').click(function() {
              event.preventDefault();
              $('body,html').animate({scrollTop:0}, 1000);

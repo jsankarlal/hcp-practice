@@ -30817,7 +30817,7 @@ jQuery(document).ready(function() {
              _this.showBackToTop.call(_this);
          });
 
-         $(document).click(function(){
+         $(document).click(function() {
              $('#contact-us-form.collapse').collapse('hide');
          });
 
