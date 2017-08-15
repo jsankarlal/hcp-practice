@@ -30818,7 +30818,11 @@ jQuery(document).ready(function() {
          });
 
          $(document).click(function() {
-             $('#contact-us-form.collapse').collapse('hide');
+             var $targetEl = $(event.target);
+             if ($targetEl.closest('#contact-us-form').length < 1) {
+                $('#contact-us-form.collapse').collapse('hide');
+             }
+            
          });
 
          $('.scroll-top').click(function() {
