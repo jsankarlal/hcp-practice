@@ -285,7 +285,7 @@ a, a[data-popup]{
 #contact-us-form{
     position: fixed;
     max-height:80vh;
-    overflow-y:scroll;
+    overflow-y:auto;
     z-index: 1400;
     right: 0;
     bottom: 40px;

@@ -7,7 +7,7 @@
         var _this = this;
         $('#popup-template').find('.modal-title').html('Thanks for contacting us');
         $('#popup-template').find('.modal-body').html('<p> We have Received your query. We will get back to you shortly</p>');
-        $('#contact-us-form.collapse').collapse('toggle');
+        $('#contact-us-form.collapse').collapse('toggle'); //$('#contact-us-form.collapse').collapse("hide");
         $('#popup-template').modal('show');
         
     };
@@ -37,7 +37,11 @@
          _this.$window.on('scroll', function() {
              _this.showBackToTop.call(_this);
          });
-         
+
+         $(document).click(function(){
+             $('#contact-us-form.collapse').collapse('hide');
+         });
+
          $('.scroll-top').click(function() {
              event.preventDefault();
              $('body,html').animate({scrollTop:0}, 1000);
