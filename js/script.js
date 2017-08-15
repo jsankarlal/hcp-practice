@@ -27,7 +27,8 @@
     G3.prototype.bindEvents = function() {
         var _this = this,
             $videoPopup = $('#video-popup-template'),
-            $formelement = '';
+            $formelement = '',
+            $contactusForm = $('#contact-us-form');
         //on resize event
         _this.$window.on('resize', function() {
            
@@ -41,11 +42,19 @@
          $(document).click(function() {
              var $targetEl = $(event.target);
              if ($targetEl.closest('#contact-us-form').length < 1) {
-                $('#contact-us-form.collapse').collapse('hide');
+                 $contactusForm.collapse('hide');
              }
             
          });
-
+         
+         $(document).on('shown.bs.collapse', '#contact-us-form', function() {
+             $contactusForm.addClass('max-height-80vh');
+         });
+         
+         $(document).on('hide.bs.collapse', '#contact-us-form', function() {
+             $contactusForm.removeClass('max-height-80vh');
+         });
+         
          $('.scroll-top').click(function() {
              event.preventDefault();
              $('body,html').animate({scrollTop:0}, 1000);

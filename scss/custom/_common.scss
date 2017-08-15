@@ -131,15 +131,20 @@
 .block-link{
 	display:block; 	
 }
-
-h3 {
-  display: inline-block;
-  padding: 10px;
-  background: #1a5061;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+[data-popup="true"] {
+    h3 {
+      display: inline-block;
+      padding: 10px;
+      background: #1a5061;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
 }
-
+a{
+    &:hover{
+        text-decoration:underline;
+    }
+}
 .full-screen {
   background-size: cover;
   background-position: center;
