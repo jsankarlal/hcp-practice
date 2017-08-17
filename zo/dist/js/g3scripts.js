@@ -31236,7 +31236,19 @@ jQuery(document).ready(function() {
         }
 
     };
-    
+    G3.prototype.validateForm = function($formContainer) {
+        var _this = this,
+            user = $('.authentication-text-field').val()
+            pass = $('.authentication-password-field').val();
+        if (user === 'g3admin' && pass === 'Designer') {
+            _this.$body.removeClass('authentication-modal-open');
+            $('#authentication-modal').hide();
+            _this.smoothScroll(hash);
+            _this.createCookie('g3admin', 'true');
+        }
+
+    };
+
     G3.prototype.initializeCarousel = function() {
         var _this = this,
             $item = $('.carousel .item'),
@@ -31266,9 +31278,9 @@ jQuery(document).ready(function() {
         });
     };
     
-    G3.prototype.initializeCarousel = function() {
+/*    G3.prototype.initializeCarousel = function() {
         var _this = this;
-    }
+    }*/
     
     //init
     G3.prototype.init = function() {

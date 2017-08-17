@@ -12913,7 +12913,7 @@ button.close {
 
 /* line 36, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_header.scss */
 #global-navigation .brand-header a.block-link:hover, #global-navigation .brand-header a.block-link:focus {
-  font-style: italic;
+  font-size: 18px;
 }
 
 /* line 41, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_header.scss */
