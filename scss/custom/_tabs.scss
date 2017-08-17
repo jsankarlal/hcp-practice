@@ -329,6 +329,11 @@ h3.h3_title {
 	margin-bottom: -1px !important;
     padding: 18px !important;
 	color: #fff !important;
+    background-color: #3B5998 !important;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
 }
 
 .HorizontalTab.tabs_hor_1 .resp-tabs-list li i {

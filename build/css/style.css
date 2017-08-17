@@ -13630,15 +13630,20 @@ h3.h3_title {
   margin-bottom: -1px !important;
   padding: 18px !important;
   color: #fff !important;
+  background-color: #3B5998 !important;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
-/* line 334, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 339, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_1 .resp-tabs-list li i {
   font-size: 16px;
   margin-right: 8px;
 }
 
-/* line 339, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 344, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_1 h2.title_contanier {
   font-family: "Roboto", sans-serif;
   font-size: 28px;
@@ -13652,7 +13657,7 @@ h3.h3_title {
   border-bottom: 1px solid #eee;
 }
 
-/* line 353, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 358, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_1 .resp-tab-content {
   border: 0 !important;
   padding: 33px 30px;
@@ -13661,7 +13666,7 @@ h3.h3_title {
   box-shadow: 9px 9px 0px rgba(50, 50, 50, 0.31);
 }
 
-/* line 362, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 367, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_1 p {
   color: #434a54;
   font-family: "Roboto", sans-serif;
@@ -13671,7 +13676,7 @@ h3.h3_title {
   margin-bottom: 15px;
 }
 
-/* line 377, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 382, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_2 .resp-tabs-list li {
   display: inline-block;
   margin: 0 4px 0 0;
@@ -13692,7 +13697,7 @@ h3.h3_title {
   text-align: center;
 }
 
-/* line 397, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 402, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_2 .resp-tabs-list .resp-tab-active {
   border: 0 !important;
   margin-bottom: -1px !important;
@@ -13700,7 +13705,7 @@ h3.h3_title {
   color: #fff !important;
 }
 
-/* line 404, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 409, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_2 .resp-tabs-list li i {
   font-size: 20px;
   position: relative;
@@ -13709,7 +13714,7 @@ h3.h3_title {
   margin-bottom: 8px;
 }
 
-/* line 412, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 417, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_2 h2.title_contanier {
   font-family: "Roboto", sans-serif;
   font-size: 28px;
@@ -13724,7 +13729,7 @@ h3.h3_title {
   border-bottom: 1px solid #eee;
 }
 
-/* line 426, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 431, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_2 .resp-tab-content {
   border: 0 !important;
   padding: 33px 30px;
@@ -13733,7 +13738,7 @@ h3.h3_title {
   box-shadow: 9px 9px 0px rgba(50, 50, 50, 0.31);
 }
 
-/* line 435, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 440, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_2 p {
   color: #434a54;
   font-family: "Roboto", sans-serif;
@@ -13743,7 +13748,7 @@ h3.h3_title {
   margin-bottom: 15px;
 }
 
-/* line 449, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 454, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_3 .resp-tabs-list li {
   display: inline-block;
   margin: 0 4px 0 0;
@@ -13765,7 +13770,7 @@ h3.h3_title {
   text-align: center;
 }
 
-/* line 470, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 475, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_3 .resp-tabs-list .resp-tab-active {
   border: 0 !important;
   margin-bottom: -1px !important;
@@ -13774,7 +13779,7 @@ h3.h3_title {
   padding: 20px !important;
 }
 
-/* line 477, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 482, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_3 .resp-tabs-list li:hover {
   background-color: #fff !important;
   -moz-transition: all 0.2s linear;
@@ -13784,7 +13789,7 @@ h3.h3_title {
   padding: 20px !important;
 }
 
-/* line 486, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 491, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_3 .resp-tabs-list li i {
   font-size: 22px;
   -webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
@@ -13807,7 +13812,7 @@ h3.h3_title {
   background: #fff !important;
 }
 
-/* line 507, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 512, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_3 .resp-tabs-list li:hover i,
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_3 .resp-tabs-list .resp-tab-active i {
   color: #fff !important;
@@ -13816,12 +13821,12 @@ h3.h3_title {
   transition-timing-function: linear;
 }
 
-/* line 514, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 519, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_3 .resp-tabs-list li span.tabs-text {
   display: none;
 }
 
-/* line 517, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 522, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_3 h2.title_contanier {
   font-family: "Roboto", sans-serif;
   font-size: 28px;
@@ -13836,7 +13841,7 @@ h3.h3_title {
   border-bottom: 1px solid #eee;
 }
 
-/* line 531, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 536, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_3 .resp-tab-content {
   border: 0 !important;
   padding: 33px 30px;
@@ -13845,7 +13850,7 @@ h3.h3_title {
   box-shadow: 9px 9px 0px rgba(50, 50, 50, 0.31);
 }
 
-/* line 540, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 545, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_3 p {
   color: #434a54;
   font-family: "Roboto", sans-serif;
@@ -13855,7 +13860,7 @@ h3.h3_title {
   margin-bottom: 15px;
 }
 
-/* line 553, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 558, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_4 .resp-tabs-list li {
   font-weight: 400;
   font-size: 14px;
@@ -13872,7 +13877,7 @@ h3.h3_title {
   padding: 17px !important;
 }
 
-/* line 569, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 574, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_4 .resp-tabs-list .resp-tab-active {
   border: 0 !important;
   color: #000 !important;
@@ -13881,7 +13886,7 @@ h3.h3_title {
   padding: 17px !important;
 }
 
-/* line 576, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 581, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_4 .resp-tabs-list li:hover {
   border: 0 !important;
   color: #000 !important;
@@ -13893,13 +13898,13 @@ h3.h3_title {
   transition: all 0.2s linear;
 }
 
-/* line 587, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 592, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_4 .resp-tabs-list li i {
   font-size: 16px;
   margin-right: 8px;
 }
 
-/* line 592, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 597, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_4 h2.title_contanier {
   font-family: "Roboto", sans-serif;
   font-size: 28px;
@@ -13914,7 +13919,7 @@ h3.h3_title {
   border-bottom: 1px solid #eee;
 }
 
-/* line 606, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 611, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_4 .resp-tab-content {
   border: 0 !important;
   padding: 33px 30px;
@@ -13925,7 +13930,7 @@ h3.h3_title {
   border: 0;
 }
 
-/* line 617, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 622, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_4 p {
   color: #666;
   font-family: "Roboto", sans-serif;
@@ -13935,13 +13940,13 @@ h3.h3_title {
   margin-bottom: 15px;
 }
 
-/* line 632, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 637, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_5 .resp-tabs-list {
   border-bottom: 1px solid #d9d9d9;
   height: 62px;
 }
 
-/* line 637, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 642, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_5 .resp-tabs-list li {
   font-weight: 400;
   font-size: 14px;
@@ -13958,7 +13963,7 @@ h3.h3_title {
   padding: 17px !important;
 }
 
-/* line 653, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 658, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_5 .resp-tabs-list .resp-tab-active {
   border: 0 !important;
   color: #000 !important;
@@ -13967,7 +13972,7 @@ h3.h3_title {
   padding: 17px !important;
 }
 
-/* line 660, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 665, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_5 .resp-tabs-list li:hover {
   border: 0 !important;
   color: #000 !important;
@@ -13979,13 +13984,13 @@ h3.h3_title {
   transition: all 0.2s linear;
 }
 
-/* line 671, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 676, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_5 .resp-tabs-list li i {
   font-size: 16px;
   margin-right: 8px;
 }
 
-/* line 676, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 681, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_5 h2.title_contanier {
   font-family: "Roboto", sans-serif;
   font-size: 28px;
@@ -14001,7 +14006,7 @@ h3.h3_title {
   display: none;
 }
 
-/* line 691, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 696, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_5 .resp-tab-content {
   border: 0 !important;
   padding: 33px 0;
@@ -14011,7 +14016,7 @@ h3.h3_title {
   border: 0;
 }
 
-/* line 701, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 706, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .HorizontalTab.tabs_hor_5 p {
   color: #666;
   font-family: "Roboto", sans-serif;
@@ -14021,14 +14026,14 @@ h3.h3_title {
   margin-bottom: 15px;
 }
 
-/* line 722, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 727, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_1.resp-vtabs ul.resp-tabs-list {
   float: left;
   width: 25%;
   margin-top: 0 !important;
 }
 
-/* line 727, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 732, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_1.resp-vtabs .resp-tabs-container {
   padding: 0px;
   background-color: #f4f4f4;
@@ -14041,7 +14046,7 @@ h3.h3_title {
   border-radius: 0;
 }
 
-/* line 738, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 743, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_1 .resp-tabs-list li {
   display: block;
   margin: 0;
@@ -14061,12 +14066,12 @@ h3.h3_title {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
-/* line 756, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 761, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_1 .resp-tabs-list li:last-child {
   border-bottom: 0 !important;
 }
 
-/* line 759, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 764, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_1 .resp-tabs-list .resp-tab-active {
   border: 0 !important;
   margin-bottom: 0px !important;
@@ -14074,7 +14079,7 @@ h3.h3_title {
   background-color: #f4f4f4 !important;
 }
 
-/* line 765, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 770, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_1 .resp-tabs-list li:hover {
   color: #fff !important;
   padding: 18px !important;
@@ -14084,13 +14089,13 @@ h3.h3_title {
   transition: all 0.2s linear;
 }
 
-/* line 774, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 779, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_1 .resp-tabs-list li i {
   font-size: 16px;
   margin-right: 8px;
 }
 
-/* line 779, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 784, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_1 h2.title_contanier {
   font-family: "Roboto", sans-serif;
   font-size: 28px;
@@ -14105,7 +14110,7 @@ h3.h3_title {
   border-bottom: 1px solid #e6e6e6;
 }
 
-/* line 793, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 798, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_1 .resp-tab-content {
   border: 0 !important;
   padding: 33px 30px;
@@ -14114,7 +14119,7 @@ h3.h3_title {
   box-shadow: 9px 9px 0px rgba(50, 50, 50, 0.31);
 }
 
-/* line 802, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 807, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_1 p {
   color: #999;
   font-family: "Roboto", sans-serif;
@@ -14124,7 +14129,7 @@ h3.h3_title {
   margin-bottom: 15px;
 }
 
-/* line 816, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 821, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_2.resp-vtabs ul.resp-tabs-list {
   float: left;
   width: 25%;
@@ -14134,7 +14139,7 @@ h3.h3_title {
   margin-bottom: 10px;
 }
 
-/* line 824, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 829, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_2.resp-vtabs .resp-tabs-container {
   padding: 0px;
   background-color: #f4f4f4;
@@ -14148,7 +14153,7 @@ h3.h3_title {
   margin-left: 13px;
 }
 
-/* line 836, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 841, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_2 .resp-tabs-list li {
   display: block;
   margin: 0;
@@ -14169,7 +14174,7 @@ h3.h3_title {
   text-align: center;
 }
 
-/* line 856, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 861, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_2 .resp-tabs-list .resp-tab-active {
   margin-bottom: 0px !important;
   padding: 17px !important;
@@ -14178,7 +14183,7 @@ h3.h3_title {
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
 }
 
-/* line 863, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 868, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_2 .resp-tabs-list li:hover {
   background-color: #f4f4f4 !important;
   padding: 17px !important;
@@ -14188,7 +14193,7 @@ h3.h3_title {
   transition: all 0.2s linear;
 }
 
-/* line 872, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 877, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_2 .resp-tabs-list li i {
   font-size: 22px;
   -webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
@@ -14216,7 +14221,7 @@ h3.h3_title {
   transition: all 0.2s linear;
 }
 
-/* line 899, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 904, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_2 .resp-tabs-list .resp-tab-active i,
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_2 .resp-tabs-list li:hover i {
   color: #f4f4f4 !important;
@@ -14226,12 +14231,12 @@ h3.h3_title {
   transition: all 0.2s linear;
 }
 
-/* line 909, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 914, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_2 .resp-tabs-list li span.tabs-text {
   display: none;
 }
 
-/* line 913, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 918, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_2 h2.title_contanier {
   font-family: "Roboto", sans-serif;
   font-size: 28px;
@@ -14246,7 +14251,7 @@ h3.h3_title {
   border-bottom: 1px solid #e6e6e6;
 }
 
-/* line 927, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 932, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_2 .resp-tab-content {
   border: 0 !important;
   padding: 33px 30px;
@@ -14255,7 +14260,7 @@ h3.h3_title {
   box-shadow: none;
 }
 
-/* line 936, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 941, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_2 p {
   color: #999;
   font-family: "Roboto", sans-serif;
@@ -14265,14 +14270,14 @@ h3.h3_title {
   margin-bottom: 15px;
 }
 
-/* line 949, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 954, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_3.resp-vtabs ul.resp-tabs-list {
   float: right;
   margin-top: 0 !important;
   width: 8%;
 }
 
-/* line 954, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 959, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_3.resp-vtabs .resp-tabs-container {
   padding: 0px;
   background-color: #f4f4f4;
@@ -14286,7 +14291,7 @@ h3.h3_title {
   margin-left: 13px;
 }
 
-/* line 966, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 971, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_3 .resp-tabs-list li {
   display: block;
   margin: 0;
@@ -14307,7 +14312,7 @@ h3.h3_title {
   text-align: center;
 }
 
-/* line 986, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 991, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_3 .resp-tabs-list .resp-tab-active {
   margin-bottom: 0px !important;
   padding: 17px !important;
@@ -14316,7 +14321,7 @@ h3.h3_title {
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
 }
 
-/* line 993, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 998, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_3 .resp-tabs-list li:hover {
   background-color: #f4f4f4 !important;
   padding: 17px !important;
@@ -14326,7 +14331,7 @@ h3.h3_title {
   transition: all 0.2s linear;
 }
 
-/* line 1002, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1007, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_3 .resp-tabs-list li i {
   font-size: 22px;
   -webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
@@ -14354,7 +14359,7 @@ h3.h3_title {
   transition: all 0.2s linear;
 }
 
-/* line 1029, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1034, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_3 .resp-tabs-list .resp-tab-active i,
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_3 .resp-tabs-list li:hover i {
   color: #f4f4f4 !important;
@@ -14364,12 +14369,12 @@ h3.h3_title {
   transition: all 0.2s linear;
 }
 
-/* line 1039, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1044, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_3 .resp-tabs-list li span.tabs-text {
   display: none;
 }
 
-/* line 1043, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1048, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_3 h2.title_contanier {
   font-family: "Roboto", sans-serif;
   font-size: 28px;
@@ -14384,7 +14389,7 @@ h3.h3_title {
   border-bottom: 1px solid #e6e6e6;
 }
 
-/* line 1057, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1062, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_3 .resp-tab-content {
   border: 0 !important;
   padding: 33px 30px;
@@ -14393,7 +14398,7 @@ h3.h3_title {
   box-shadow: none;
 }
 
-/* line 1066, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1071, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_3 p {
   color: #999;
   font-family: "Roboto", sans-serif;
@@ -14403,7 +14408,7 @@ h3.h3_title {
   margin-bottom: 15px;
 }
 
-/* line 1080, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1085, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_4.resp-vtabs ul.resp-tabs-list {
   float: left;
   width: 25%;
@@ -14413,7 +14418,7 @@ h3.h3_title {
   margin-bottom: 10px;
 }
 
-/* line 1088, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1093, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_4.resp-vtabs .resp-tabs-container {
   padding: 0px;
   background-color: #f4f4f4;
@@ -14427,7 +14432,7 @@ h3.h3_title {
   margin-left: 13px;
 }
 
-/* line 1100, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1105, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_4 .resp-tabs-list li {
   display: block;
   margin: 0;
@@ -14448,7 +14453,7 @@ h3.h3_title {
   text-align: center;
 }
 
-/* line 1120, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1125, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_4 .resp-tabs-list .resp-tab-active {
   margin-bottom: 0px !important;
   padding: 17px !important;
@@ -14457,7 +14462,7 @@ h3.h3_title {
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
 }
 
-/* line 1127, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1132, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_4 .resp-tabs-list li:hover {
   background-color: #f4f4f4 !important;
   padding: 17px !important;
@@ -14467,7 +14472,7 @@ h3.h3_title {
   transition: all 0.2s linear;
 }
 
-/* line 1136, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1141, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_4 .resp-tabs-list li i {
   font-size: 22px;
   -webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
@@ -14494,7 +14499,7 @@ h3.h3_title {
   transition: all 0.2s linear;
 }
 
-/* line 1162, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1167, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_4 .resp-tabs-list .resp-tab-active i,
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_4 .resp-tabs-list li:hover i {
   -moz-transition: all 0.2s linear;
@@ -14503,12 +14508,12 @@ h3.h3_title {
   transition: all 0.2s linear;
 }
 
-/* line 1170, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1175, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_4 .resp-tabs-list li span.tabs-text {
   display: block;
 }
 
-/* line 1175, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1180, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_4 h2.title_contanier {
   font-family: "Roboto", sans-serif;
   font-size: 28px;
@@ -14523,7 +14528,7 @@ h3.h3_title {
   border-bottom: 1px solid #e6e6e6;
 }
 
-/* line 1189, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1194, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_4 .resp-tab-content {
   border: 0 !important;
   padding: 33px 30px;
@@ -14532,7 +14537,7 @@ h3.h3_title {
   box-shadow: none;
 }
 
-/* line 1198, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1203, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_4 p {
   color: #999;
   font-family: "Roboto", sans-serif;
@@ -14542,7 +14547,7 @@ h3.h3_title {
   margin-bottom: 15px;
 }
 
-/* line 1211, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1216, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_5.resp-vtabs ul.resp-tabs-list {
   margin-top: 0 !important;
   float: right;
@@ -14550,7 +14555,7 @@ h3.h3_title {
   margin-bottom: 10px;
 }
 
-/* line 1217, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1222, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_5.resp-vtabs .resp-tabs-container {
   padding: 0px;
   background-color: #f4f4f4;
@@ -14564,7 +14569,7 @@ h3.h3_title {
   margin-left: 13px;
 }
 
-/* line 1229, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1234, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_5 .resp-tabs-list li {
   display: block;
   margin: 0;
@@ -14585,7 +14590,7 @@ h3.h3_title {
   text-align: center;
 }
 
-/* line 1249, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1254, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_5 .resp-tabs-list .resp-tab-active {
   margin-bottom: 0px !important;
   padding: 17px !important;
@@ -14594,7 +14599,7 @@ h3.h3_title {
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
 }
 
-/* line 1256, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1261, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_5 .resp-tabs-list li:hover {
   background-color: #f4f4f4 !important;
   padding: 17px !important;
@@ -14604,7 +14609,7 @@ h3.h3_title {
   transition: all 0.2s linear;
 }
 
-/* line 1265, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1270, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_5 .resp-tabs-list li i {
   font-size: 22px;
   -webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
@@ -14631,12 +14636,12 @@ h3.h3_title {
   transition: all 0.2s linear;
 }
 
-/* line 1292, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1297, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_5 .resp-tabs-list li span.tabs-text {
   display: block;
 }
 
-/* line 1296, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1301, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_5 h2.title_contanier {
   font-family: "Roboto", sans-serif;
   font-size: 28px;
@@ -14651,7 +14656,7 @@ h3.h3_title {
   border-bottom: 1px solid #e6e6e6;
 }
 
-/* line 1310, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1315, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_5 .resp-tab-content {
   border: 0 !important;
   padding: 33px 30px;
@@ -14660,7 +14665,7 @@ h3.h3_title {
   box-shadow: none;
 }
 
-/* line 1319, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1324, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_5 p {
   color: #999;
   font-family: "Roboto", sans-serif;
@@ -14670,7 +14675,7 @@ h3.h3_title {
   margin-bottom: 15px;
 }
 
-/* line 1333, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1338, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_6.resp-vtabs ul.resp-tabs-list {
   float: left;
   width: 25%;
@@ -14680,7 +14685,7 @@ h3.h3_title {
   margin-bottom: 10px;
 }
 
-/* line 1341, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1346, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_6.resp-vtabs .resp-tabs-container {
   padding: 0px;
   background-color: #f4f4f4;
@@ -14694,7 +14699,7 @@ h3.h3_title {
   margin-left: 13px;
 }
 
-/* line 1353, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1358, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_6 .resp-tabs-list li {
   display: block;
   margin: 0;
@@ -14715,7 +14720,7 @@ h3.h3_title {
   text-align: center;
 }
 
-/* line 1373, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1378, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_6 .resp-tabs-list .resp-tab-active {
   margin-bottom: 0px !important;
   padding: 17px !important;
@@ -14724,7 +14729,7 @@ h3.h3_title {
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
 }
 
-/* line 1380, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1385, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_6 .resp-tabs-list li:hover {
   background-color: #f4f4f4 !important;
   padding: 17px !important;
@@ -14734,7 +14739,7 @@ h3.h3_title {
   transition: all 0.2s linear;
 }
 
-/* line 1389, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1394, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_6 .resp-tabs-list li i {
   font-size: 22px;
   -webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
@@ -14761,12 +14766,12 @@ h3.h3_title {
   transition: all 0.2s linear;
 }
 
-/* line 1416, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1421, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_6 .resp-tabs-list li span.tabs-text {
   display: block;
 }
 
-/* line 1420, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1425, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_6 h2.title_contanier {
   font-family: "Roboto", sans-serif;
   font-size: 28px;
@@ -14781,7 +14786,7 @@ h3.h3_title {
   border-bottom: 1px solid #e6e6e6;
 }
 
-/* line 1434, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1439, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_6 .resp-tab-content {
   border: 0 !important;
   padding: 33px 30px;
@@ -14790,7 +14795,7 @@ h3.h3_title {
   box-shadow: none;
 }
 
-/* line 1443, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1448, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .VerticalTab.tabs_ver_6 p {
   color: #999;
   font-family: "Roboto", sans-serif;
@@ -14800,7 +14805,7 @@ h3.h3_title {
   margin-bottom: 15px;
 }
 
-/* line 1459, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1464, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 h2.resp-accordion {
   font-size: 17px;
   text-transform: uppercase;
@@ -14819,7 +14824,7 @@ h3.h3_title {
   border-right: 0 !important;
 }
 
-/* line 1476, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1481, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 h2.resp-tab-active {
   border: 0 !important;
   border-bottom: 1px solid #ccc !important;
@@ -14830,12 +14835,12 @@ h3.h3_title {
   border-right: 0 !important;
 }
 
-/* line 1485, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1490, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 h2.resp-accordion:first-child {
   border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
-/* line 1489, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1494, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 h2.resp-accordion .tabs-text {
   position: relative;
   top: -3px;
@@ -14843,14 +14848,14 @@ h3.h3_title {
   font-size: 14px;
 }
 
-/* line 1496, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1501, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 .arrow-tabs {
   float: right;
   margin-top: 10px;
   font-size: 18px !important;
 }
 
-/* line 1502, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1507, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .horizontal-tabs-g3 h2.resp-accordion .fc_icons {
   font-size: 22px;
   -webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
@@ -14874,7 +14879,7 @@ h3.h3_title {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 1527, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+  /* line 1532, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
   .horizontal-tabs-g3 .resp-vtabs .resp-tabs-container {
     border: none !important;
     float: none !important;
@@ -14882,7 +14887,7 @@ h3.h3_title {
     min-height: 250px !important;
     clear: none !important;
   }
-  /* line 1534, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+  /* line 1539, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
   .horizontal-tabs-g3 .VerticalTab.tabs_ver_2.resp-vtabs .resp-tabs-container,
   .horizontal-tabs-g3 .VerticalTab.tabs_ver_3.resp-vtabs .resp-tabs-container,
   .horizontal-tabs-g3 .VerticalTab.tabs_ver_4.resp-vtabs .resp-tabs-container,
@@ -14897,7 +14902,7 @@ h3.h3_title {
 ------------------- 6. Footer -----------------------
 =====================================================
 */
-/* line 1555, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1560, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .site-footer {
   background-color: #222222;
   border-top: 1px solid #303030;
@@ -14905,18 +14910,18 @@ h3.h3_title {
   font-family: "Dosis", sans-serif;
 }
 
-/* line 1561, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1566, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .site-footer .copyright {
   font-size: 16px;
   color: #757575;
 }
 
-/* line 1565, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1570, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .site-footer .copyright span a {
   color: #f3f3f3;
 }
 
-/* line 1569, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
+/* line 1574, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_tabs.scss */
 .site-footer .credit a {
   color: #f3f3f3;
 }

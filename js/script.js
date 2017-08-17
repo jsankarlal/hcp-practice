@@ -377,7 +377,11 @@
  			});
 
 
-     });
+ 		});
+ 		
+ 		if (document.referrer.indexOf('faq.html') != -1 || document.referrer.indexOf('clinical-trials.html') != -1 || _this.readCookie('g3admin') == 'true') {
+ 			$('body').removeClass('authentication-modal-open');
+		}
 
          //jscs:enable
     };
@@ -390,6 +394,40 @@
         } else { 
             $floatingBackCta.removeClass('scroll-top-active');
         }
+    };
+    
+    G3.prototype.createCookie = function(name, value, days) {
+        var expires,
+            date = new Date();
+        if (days) {
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = '; expires=' + date.toGMTString();
+        } else {
+            expires = '';
+        }
+
+        document.cookie = encodeURIComponent(name) + '=' + encodeURIComponent(value) + expires + '; path=/';
+    }
+
+    G3.prototype.readCookie = function(cname) {
+        var _this = this,
+            name = cname + '=',
+            decodedCookie = decodeURIComponent(document.cookie),
+            ca = decodedCookie.split(';'),
+            i, c;
+        for (i = 0; i < ca.length; i++) {
+            c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+
+        }
+
+        return '';
     }
     
     G3.prototype.submitAuthenticateForm = function(hash) {
@@ -400,6 +438,7 @@
             _this.$body.removeClass('authentication-modal-open');
             $('#authentication-modal').hide();
             _this.smoothScroll(hash);
+            _this.createCookie('g3admin', 'true');
         }
 
     };
