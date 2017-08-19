@@ -394,13 +394,187 @@ a, a[data-popup]{
 
 /* contact us form  - starts */
 
-#contact-us-form{
+$white: #fff;
+$purple: #54428E;
+$success: #0A8754;
+$lightSuccess: #82E682;
+$error: #FF5C5C;
+$grey: #ccc;
+$opacBlack: rgba(0, 0, 0, 0.3);
+
+.form-group{
+    
+    &.inputContainer {
+        border: 1px solid $grey;
+        border-radius: 3px;
+        position: relative;
+        margin-bottom: 10px;
+        overflow: hidden;
+        background: transparent;
+        height: 34px;
+        &.text-area{
+            height:min-content;
+        }
+        label,
+        input,
+        textarea {
+            box-sizing: border-box;
+            padding: 10px 6px;
+            font-size: 14px;
+            line-height: 1em;
+            border: none;
+            font: inherit;
+        }
+
+        label {
+            display: inline-block;
+            font-size: .9em;
+            background: $grey * 1.1;
+            color: $opacBlack;
+            line-height: 1.25em;
+            border-right: 1px solid $grey;
+            margin-bottom:0px;
+            /*POSITION*/
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            height: 34px;
+            z-index:5;
+        }
+
+        textarea,
+        input {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        textarea {
+            margin-bottom: -5px;
+        }
+
+        input {
+            padding-left: 50px;
+        }
+    }
+
+    /*&.form-group-input-icons{
+        position:relative;
+        display: block;
+        width: 100%;
+        height: 34px;
+        font-size: 14px;
+        line-height: 1.428571429;
+        color: #555555;
+        background-color: #fff;
+        background-image: none;
+        border: none;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+        -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+        transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    }*/
+
+    &.valid{
+        border-color: $lightSuccess;
+        input, textarea {
+            color: $success;
+        }
+        label {
+            background: $lightSuccess;
+            border-color: $success;
+        }
+        &:after {
+            font: 1.25em/2em FontAwesome;
+            color: $lightSuccess;
+            position: absolute;
+            top: 0;
+            right: 10px;
+            content: "\f00c";
+        }
+    }
+
+    &.invalid {
+        border-color: #e85454;
+        input, textarea {
+            color: $error;
+        }
+        label {
+            background: $error;
+            border-color: #e85454;
+        }
+    
+        &:after {
+            font: 1.25em/2em FontAwesome;
+            color: #FF5C5C;
+            position: absolute;
+            top: 0;
+            right: 10px;
+            content: "\f00d";
+        }
+        .message{
+            width:100%;
+        }
+    }
+    .message{
+        color: #FF5C5C;
+        background: #ffb8b8;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 0;
+        margin: 0;
+        line-height: 2.5em;
+        text-align: center;
+        overflow: hidden;
+        -webkit-transition: all 0.1s ease;
+        transition: all 0.1s ease;
+    }
+    
+    .glyphicon-ok, .glyphicon-refresh, .glyphicon-remove{
+        display:none;
+        position:absolute;
+        right: 6px;
+        top: 9px;
+        font-size: 16px;
+    }
+    .glyphicon-ok{
+        
+    }
+    
+    .glyphicon-remove{
+        color:#ba1c31;
+    }
+
+    &.invalid{
+        .glyphicon-remove{
+            display:inline-block;
+        }
+        .glyphicon-ok, .glyphicon-refresh{
+            display:none;
+        }
+    }
+    &.valid{
+        .glyphicon-ok{
+            display:inline-block;
+        }
+        .glyphicon-remove, .glyphicon-refresh{
+            display:none;
+        }
+    }
+    .missing{
+        border:1px solid red;
+    }
+}
+
+#contact-us-form {
     position: fixed;
     z-index: 1400;
     right: 0;
     bottom: 40px;
     background: rgba(0, 19, 29, .9);
-    padding: 10px 10px 10px;
     webkit-box-shadow: 9px 9px 0px rgba(50, 50, 50, 0.31);
     -moz-box-shadow: 9px 9px 0px rgba(50, 50, 50, 0.31);
     box-shadow: 0px 4px 4px rgba(50, 50, 50, 0.9);
@@ -410,15 +584,65 @@ a, a[data-popup]{
         max-height:80vh;
         overflow-y:auto;
     }
-    
+
+    &.success{
+        .formHeader {
+            background: #0A8754;
+            border-color: #087146;
+        }
+        .submitting-container{
+            display:block;
+        }
+        .loading-container.submitted{
+            .submitting-container{
+                display:none;
+            }
+            .sent-success-container{
+                display:block;
+            }
+        }
+        .form-container{
+            display:none;
+        }
+    }
+
+    .form-container, .submitting-container, .sent-success-container{
+        padding: 10px 10px 10px;
+        -webkit-transition: all 0.1s ease;
+        transition: all 0.1s ease;
+    }
+    .submitting-container, .sent-success-container {
+        display:none;
+        .btn{
+            float:none;
+            margin-top:10px;
+            margin-bottom:10px;
+        }
+    }
+    .formHeader {
+        background: $celergen-blue;
+        border-bottom: 4px solid ($celergen-blue / 1.2);
+        color: $white;
+        text-align: center;
+        overflow: hidden;
+
+        /*TRANSITION*/
+        @include transition(0.5s);
+
+        h4 {
+            line-height: 1.25em;
+            font-size: 20px;
+        }
+    }
+
     h4{
         margin-top:5px;
         margin-bottom:5px;
         text-align:center;
     }
-    input{
+    /*input{
         color:#333;
-    }
+    }*/
     hr{
         margin-bottom:5px;
         margin-top:5px;
@@ -457,9 +681,10 @@ a, a[data-popup]{
 
 @media screen and (max-width: $screen-xs-max){
     #contact-us-form{
-        label{
+        /* label{
             display:none;
         }
+    */
         .btn{
             width:100%;
             margin-bottom:5px;
@@ -474,9 +699,10 @@ a, a[data-popup]{
 @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
     #contact-us-form{
         width:35%;
-        label{
+       /* label{
             display:none;
         }
+    */
     }
 }
 

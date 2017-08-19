@@ -3,13 +3,90 @@
     function G3() {
     };
     
-    G3.prototype.validateForm = function(hash) { 
-        var _this = this;
-        $('#popup-template').find('.modal-title').html('Thanks for contacting us');
-        $('#popup-template').find('.modal-body').html('<p> We have Received your query. We will get back to you shortly</p>');
-        $('#contact-us-form.collapse').collapse('toggle'); //$('#contact-us-form.collapse').collapse("hide");
-        $('#popup-template').modal('show');
+    G3.prototype.createCookie = function(name, value, days) {
+        var expires,
+            date = new Date();
+        if (days) {
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = '; expires=' + date.toGMTString();
+        } else {
+            expires = '';
+        }
+
+        document.cookie = encodeURIComponent(name) + '=' + encodeURIComponent(value) + expires + '; path=/';
+    }
+
+    G3.prototype.readCookie = function(cname) {
+        var _this = this,
+            name = cname + '=',
+            decodedCookie = decodeURIComponent(document.cookie),
+            ca = decodedCookie.split(';'),
+            i, c;
+        for (i = 0; i < ca.length; i++) {
+            c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+
+        }
+
+        return '';
+    }
+    
+    G3.prototype.validateForm = function(form, formSectionContainer) { 
+        var _this = this,
+            valid = true,
+            $formSectionContainer = $(formSectionContainer),
+            validForm = [],
+            $formElements = $(form).find('.form-control');
+             
+        $formElements.each(function() {
+            var value = this.value.trim(),
+                $formGroup = $(this).closest('.form-group'),
+                pattern = new RegExp(this.pattern, 'i');
+
+            if (this.required) {
+                if (value == '') {
+                    $formGroup.addClass('invalid').removeClass('valid');
+                    validForm.push(false);
+                } else if (this.pattern != '' && pattern.test(value)) {
+                    validForm.push(true);
+                    $formGroup.removeClass('invalid').addClass('valid');
+                } else if (this.pattern == '' && value != '') {
+                    $formGroup.removeClass('invalid').addClass('valid');
+                    validForm.push(true);
+                } else {
+                    $formGroup.addClass('invalid').removeClass('valid');
+                    validForm.push(false);
+                }
+                
+            }
+            
+        });
+
+        $(validForm).each(function(index, item) {
+            if (item == false) {
+               valid = false;
+            }
+            
+        });
         
+        if (valid == true) {
+            $formSectionContainer.addClass('success');
+            setTimeout(function() {
+                $formSectionContainer.find('.loading-container').addClass('submitted');
+            }, 1500);
+            /*$('#popup-template').find('.modal-title').html('Thanks for contacting us');
+            $('#popup-template').find('.modal-body').html('<p> We have Received your query. We will get back to you shortly</p>');*/
+            //$('#contact-us-form.collapse').collapse('toggle');
+            //$('#contact-us-form.collapse').collapse("hide");
+            /*$('#popup-template').modal('show');*/
+        }
+
     };
     
     G3.prototype.smoothScroll = function(hash) {
@@ -18,9 +95,11 @@
             position = 0,
             navigationHeight = $('#global-navigation').height();
         
-        if (hash != '' && hash != 'undefined') {
+        if (hash != '' && hash != 'undefined' && $(hash).length > 0) {
             position = $(hash).offset().top - navigationHeight;
             $('body,html').animate({scrollTop: position}, 1500);
+        } else if (hash.indexOf('.html') != -1) {
+            location.href = hash;
         }
     }
     
@@ -33,6 +112,17 @@
         _this.$window.on('resize', function() {
            
         });
+
+        $('.form-group').click(function() {
+            if ($(this).hasClass('invalid')) {
+                $(this).find('input').attr('value', '');
+                $(this).removeClass('invalid');
+            }
+        });
+
+        if (document.referrer.indexOf('faq.html') != -1 || document.referrer.indexOf('clinical-trials.html') != -1 || _this.readCookie('g3admin') == 'true') {
+            $('body').removeClass('authentication-modal-open');
+        }
         
         //on scroll event
          _this.$window.on('scroll', function() {
@@ -53,6 +143,18 @@
          
          $(document).on('hide.bs.collapse', '#contact-us-form', function() {
              $contactusForm.removeClass('max-height-80vh');
+             
+         });
+         
+         $(document).on('hidden.bs.collapse', '#contact-us-form', function() {
+            $contactusForm.removeClass('success');
+            $contactusForm.find('.loading-container').removeClass('submitted');
+            $formElements = $(this).find('.form-control');
+            $formElements.each(function() {
+                this.value = '',
+                $(this).closest('.form-group').removeClass('invalid valid');
+            });
+             
          });
          
          $('.scroll-top').click(function() {
@@ -63,8 +165,8 @@
          $('body').scrollspy({target: '#nav'});
          
          $('#contact-us-submit').on('click', function(event) {
-             $formelement =  $('#contact-us-form');
-             _this.validateForm($formelement);
+             $formElement =  $(this).closest('form');
+             _this.validateForm($formElement, $(this).closest('.form-section-container'));
          });
          
          /* smooth scrolling for nav sections */
@@ -379,10 +481,6 @@
 
  		});
  		
- 		if (document.referrer.indexOf('faq.html') != -1 || document.referrer.indexOf('clinical-trials.html') != -1 || _this.readCookie('g3admin') == 'true') {
- 			$('body').removeClass('authentication-modal-open');
-		}
-
          //jscs:enable
     };
     
@@ -395,40 +493,6 @@
             $floatingBackCta.removeClass('scroll-top-active');
         }
     };
-    
-    G3.prototype.createCookie = function(name, value, days) {
-        var expires,
-            date = new Date();
-        if (days) {
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-            expires = '; expires=' + date.toGMTString();
-        } else {
-            expires = '';
-        }
-
-        document.cookie = encodeURIComponent(name) + '=' + encodeURIComponent(value) + expires + '; path=/';
-    }
-
-    G3.prototype.readCookie = function(cname) {
-        var _this = this,
-            name = cname + '=',
-            decodedCookie = decodeURIComponent(document.cookie),
-            ca = decodedCookie.split(';'),
-            i, c;
-        for (i = 0; i < ca.length; i++) {
-            c = ca[i];
-            while (c.charAt(0) == ' ') {
-                c = c.substring(1);
-            }
-
-            if (c.indexOf(name) == 0) {
-                return c.substring(name.length, c.length);
-            }
-
-        }
-
-        return '';
-    }
     
     G3.prototype.submitAuthenticateForm = function(hash) {
         var _this = this,
