@@ -983,61 +983,62 @@
 
 
      <div id="contact-us-form" class="collapse form-section-container">
-                <div id="formHeader" class="formHeader">
-                    <h4 class="form-header-title">Contact Us</h4>
-                </div>
-                <div class="loading-container">
-                   <div class="submitting-container text-center margin-top-15 margin-bottom-15">
-                       <span class="fa fa-spinner fa-pulse fa-2x"></span> Submitting Your Request
-                   </div>
-                   <div class="sent-success-container">
-                       <div class="text-center">
-                            <div><span class="fa fa-check-square fa-2x"></span></div>
-                            <p>Sent Successfully</p>
-                            <p>Thanks for contacting us. We will get back to you shortly.</p>
-                            <div class="form-group text-center">
-                                <a class="btn btn-default" href="#contact-us-form" data-toggle="collapse">Close <span class="fa fa-chevron-right"></span></a>
-                            </div>
-                       </div> 
-                   </div>
-                </div>
-                <form class="form-container">
-                    <div class="form-group inputContainer">
-                       <!--  <label for="firstname">Name *</label> -->
-                        <label for="name">
-                            <i class="fa fa-lg fa-fw fa-user"></i>
-                       </label>
-                        <input type="text" class="form-control" placeholder="Your name" name="name" id="name" required>
-                    </div>
-                    <div class="form-group inputContainer">
-                        <!-- <label for="email">Email address *</label> -->
-                        <label for="email">
-                            <i class="fa fa-lg fa-fw fa-envelope"></i>
-                        </label>
-                        <div class="message">Please Enter a valid Email</div>
-                        <input type="email" class="form-control" placeholder="Email Address" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" name="email" id="email" required> 
-                    </div>
-                    <div class="form-group inputContainer">
-                       <!--  <label for="phonenumber">Mobile Number *</label> -->
-                       <label for="email">
-                            <i class="fa fa-lg fa-fw fa-mobile"></i>
-                        </label>
-                        <div class="message">Please Enter a valid Mobile Number</div>
-                        <input type="tel" class="form-control" placeholder="Mobile number" name="phonenumber" id="phonenumber" pattern="^\d{10}$" required>
-                    </div>
-                    <div class="form-group inputContainer text-area">
-                        <!-- <label for="comments">Comments</label> -->
-                        <textarea class="form-control" rows="3" placeholder="Your query here" id="comments" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <input type="checkbox" class="" name="newsletters" value="subscribe" checked> I would like to subscribe for News Letters<br>
-                    </div>
-                    <div class="form-group">
-                        <a class="btn btn-default btn-red margin-bottom-10" id="contact-us-submit">Submit <span class="fa fa-chevron-right"></span></a>
-                        <a class="btn btn-default margin-bottom-10" href="#contact-us-form" data-toggle="collapse">Cancel <span class="fa fa-chevron-right"></span></a>
-                    </div>
-                </form>
+         <div id="formHeader" class="formHeader">
+             <h4 class="form-header-title">Contact Us</h4>
+         </div>
+         <div class="loading-container">
+            <div class="submitting-container text-center margin-top-15 margin-bottom-15">
+                <span class="fa fa-spinner fa-pulse fa-2x"></span> <span class="padding-left-5">Submitting Your Request</span>
             </div>
+            <div class="sent-success-container">
+                <div class="text-center">
+                     <div><span class="fa fa-check-square fa-2x"></span></div>
+                     <p>Sent Successfully</p>
+                     <p>Thanks for contacting us. We will get back to you shortly.</p>
+                     <div class="form-group text-center">
+                         <a class="btn btn-default" href="#contact-us-form" data-toggle="collapse">Close <span class="fa fa-chevron-right"></span></a>
+                     </div>
+                </div> 
+            </div>
+         </div>
+         <form class="form-container">
+             <div class="form-group inputContainer">
+                <!--  <label for="firstname">Name *</label> -->
+                 <label for="name">
+                     <i class="fa fa-lg fa-fw fa-user"></i>
+                </label>
+                <div class="message">Enter valid Name [A-Z]</div>
+                 <input type="text" class="form-control" placeholder="Your name" name="name" pattern="^[A-z ]+$" id="name" required>
+             </div>
+             <div class="form-group inputContainer">
+                 <!-- <label for="email">Email address *</label> -->
+                 <label for="email">
+                     <i class="fa fa-lg fa-fw fa-envelope"></i>
+                 </label>
+                 <div class="message">Enter a valid Email</div>
+                 <input type="email" class="form-control" placeholder="Email Address" pattern="^[a-zA-Z]+\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" name="email" id="email" required> 
+             </div>
+             <div class="form-group inputContainer">
+                <!--  <label for="phonenumber">Mobile Number *</label> -->
+                <label for="email">
+                     <i class="fa fa-lg fa-fw fa-mobile"></i>
+                 </label>
+                 <div class="message">Enter 10 Digit Number without +91</div>
+                 <input type="tel" class="form-control" placeholder="10 Digit Mobile number" name="phonenumber" id="phonenumber" pattern="^\d{10}$" required>
+             </div>
+             <div class="form-group inputContainer text-area">
+                 <!-- <label for="comments">Comments</label> -->
+                 <textarea class="form-control" rows="3" placeholder="Your query here" id="comments" required></textarea>
+             </div>
+             <div class="form-group">
+                 <input type="checkbox" class="" name="newsletters" value="subscribe" checked> I would like to subscribe for News Letters<br>
+             </div>
+             <div class="form-group">
+                 <a class="btn btn-default btn-red margin-bottom-10" id="contact-us-submit">Submit <span class="fa fa-chevron-right"></span></a>
+                 <a class="btn btn-default margin-bottom-10" href="#contact-us-form" data-toggle="collapse">Cancel <span class="fa fa-chevron-right"></span></a>
+             </div>
+         </form>
+     </div>
 
      <div class="fixed-buttons-group">
                 <div class="padding-left-0 margin-bottom-0 pull-right contact-us-form">
