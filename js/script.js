@@ -42,7 +42,8 @@
             valid = true,
             $formSectionContainer = $(formSectionContainer),
             validForm = [],
-            $formElements = $(form).find('.form-control');
+            $formElements = $(form).find('.form-control'),
+            userData = '';
              
         $formElements.each(function() {
             var value = this.value.trim(),
@@ -85,6 +86,24 @@
             //$('#contact-us-form.collapse').collapse('toggle');
             //$('#contact-us-form.collapse').collapse("hide");
             /*$('#popup-template').modal('show');*/
+            userData = $('.form-container').serialize();
+            $.ajax({
+                type: "POST",
+                //url: "MYSQL_DATA.aspx",
+                url: "http://www.celergen.in/wcfcelergenapi/CelergenService.svc/EmailToContactUsers",
+                data: JSON.stringify(userData),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function(response) {
+                    console.log(response);
+                },
+                failure: function (response) {
+                    console.log(response);
+                },
+                error: function (response) {
+                    console.log(response);
+                }
+            });
         }
 
     };
