@@ -30880,7 +30880,36 @@ jQuery(document).ready(function() {
             //$('#contact-us-form.collapse').collapse('toggle');
             //$('#contact-us-form.collapse').collapse("hide");
             /*$('#popup-template').modal('show');*/
-            userData = $('.form-container').serialize();
+            userData = {
+                'name': $('#name').val(),
+                'email': $('#email').val(),
+                'mobile': $('#mobile').val(),
+                'comments': $('#comments').val(),
+                'newssubscribe': document.getElementsByName('newsletters')[0].checked
+            };
+
+            $.ajax({
+                type: 'POST',
+                url: 'http://www.celergen.in/wcfcelergenapi/celergenservice.svc/EmailToContactUsers',
+                //url: "http://localhost:5498/CelergenService.svc/EmailToContactUsers",
+                data: JSON.stringify(userData),
+               // data: JSON.stringify({ "name": "mdev", "email": "mdevpg50@gmail.com", "mobile": "99528517", "comments": "Welcome Celergen", "newssubscribe": true }),
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                success: function(response) {
+                    console.log(response);
+                },
+                
+                failure: function(response) {
+                    console.log(response);
+                },
+                
+                error: function(response) {
+                    console.log(response);
+                }
+            });
+            
+            /*userData = $('.form-container').serialize();
             $.ajax({
                 type: 'POST',
                 //url: "MYSQL_DATA.aspx",
@@ -30900,7 +30929,7 @@ jQuery(document).ready(function() {
                     console.log(response);
                 }
                 
-            });
+            });*/
         }
 
     };
