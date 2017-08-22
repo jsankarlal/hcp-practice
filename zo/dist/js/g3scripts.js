@@ -30909,27 +30909,6 @@ jQuery(document).ready(function() {
                 }
             });
             
-            /*userData = $('.form-container').serialize();
-            $.ajax({
-                type: 'POST',
-                //url: "MYSQL_DATA.aspx",
-                url: 'http://www.celergen.in/wcfcelergenapi/CelergenService.svc/EmailToContactUsers',
-                data: JSON.stringify(userData),
-                contentType: 'application/json; charset=utf-8',
-                dataType: 'json',
-                success: function(response) {
-                    console.log(response);
-                },
-                
-                failure: function(response) {
-                    console.log(response);
-                },
-                
-                error: function(response) {
-                    console.log(response);
-                }
-                
-            });*/
         }
 
     };
