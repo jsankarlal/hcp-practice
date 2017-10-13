@@ -30471,6 +30471,8 @@ $(document).on('click', function (e) {
               scaleVideoContainer();
            // initBannerVideoSize('.video-container .filter');
             initBannerVideoSize('.video-container video');
+          } else {
+              $('.homepage-hero-module').removeAttr('style');
           }
 
           $(window).on('resize', function() {
@@ -30479,8 +30481,10 @@ $(document).on('click', function (e) {
                   insertVideoElement();
                   scaleVideoContainer();
              // initBannerVideoSize('.video-container .filter');
-                  initBannerVideoSize('.video-container video');
+              //    initBannerVideoSize('.video-container video');
                   scaleBannerVideoSize('.video-container video');
+              } else {
+                  $('.homepage-hero-module').removeAttr('style');
               }
           });
     });
@@ -30875,11 +30879,7 @@ jQuery(document).ready(function() {
             setTimeout(function() {
                 $formSectionContainer.find('.loading-container').addClass('submitted');
             }, 1500);
-            /*$('#popup-template').find('.modal-title').html('Thanks for contacting us');
-            $('#popup-template').find('.modal-body').html('<p> We have Received your query. We will get back to you shortly</p>');*/
-            //$('#contact-us-form.collapse').collapse('toggle');
-            //$('#contact-us-form.collapse').collapse("hide");
-            /*$('#popup-template').modal('show');*/
+            
             userData = {
                 'name': $('#name').val(),
                 'email': $('#email').val(),

@@ -1,6 +1,6 @@
 //header.scss
 .navbar-fixed-top-margin{
-    margin-top: 115px;
+    margin-top: 103px;
 }
 
 #global-navigation{
@@ -98,15 +98,22 @@
 			color:#fff;
 		}
 	}
-	
-
 }
+
+.nav-justified > li > a {
+    margin-bottom: 0;
+}
+
 @media (min-width: 672px) {
     .navbar {
        border-radius: 0px;
     }
+    .navbar-nav > li > a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
     .navbar-fixed-top-margin {
-        margin-top: 100px;
+        margin-top: 94px;
     }
 }
 

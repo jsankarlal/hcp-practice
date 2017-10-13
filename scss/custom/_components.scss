@@ -167,6 +167,7 @@ body.authentication-modal-open {
 .nav-justified > li, .nav-tabs.nav-justified > li {
     display: table-cell;
     width: 1%;
+    vertical-align: middle;
 }
 .modal{
     .modal-header .close {
@@ -222,6 +223,7 @@ body.authentication-modal-open {
         background: -ms-linear-gradient(top, rgba(73,155,234,1) 17%, rgba(73,155,234,1) 27%, rgba(230,233,235,1) 88%, rgba(230,233,235,1) 100%);
         background: linear-gradient(to bottom, rgba(73,155,234,1) 17%, rgba(73,155,234,1) 27%, rgba(230,233,235,1) 88%, rgba(230,233,235,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#e6e9eb', GradientType=0 );
+        background:url('/build/assets/videos/snowfall/snowfall.png') repeat;
     }
 }
         
@@ -329,8 +331,8 @@ a, a[data-popup]{
     background-color:#091b3e;
     color:#fff;
     position: relative;
-    padding-top:30px;
-    padding-bottom:30px;
+    padding-top:90px;
+    padding-bottom:90px;
     .benefits-section-image{
         padding:0px;
         background-position: center center;
@@ -344,6 +346,11 @@ a, a[data-popup]{
         }
         &.left-layout{
             left:0;
+        }
+    }
+    .lead{
+        &.text-center{
+            font-size:36px;
         }
     }
     .visible-xs{
@@ -374,11 +381,16 @@ a, a[data-popup]{
         }
     }
     @media screen and (min-width: $screen-xs-max) {
-        padding-top:80px;
-        padding-bottom:80px;
+        padding-top:125px;
+        padding-bottom:125px;
         .benefits-section-content{
            padding-left:50px;
             padding-right:50px;
+        }
+        .lead{
+            &.text-center{
+                font-size:32px;
+            }
         }
        
     }
@@ -386,6 +398,12 @@ a, a[data-popup]{
         padding-top:0px;
          .lead {
             font-size: 22px;
+        }
+        .lead{
+            &.text-center{
+                font-size:28px;
+                padding-top:60px;
+            }
         }
     }
 }
@@ -712,7 +730,7 @@ $opacBlack: rgba(0, 0, 0, 0.3);
         margin-right: 20px;
         margin-bottom: 20px;
         display: inline-block;
-        width: 100%;
+      //  width: 100%;
     }
 }
 

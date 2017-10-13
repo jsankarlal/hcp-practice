@@ -5,6 +5,8 @@
               scaleVideoContainer();
            // initBannerVideoSize('.video-container .filter');
             initBannerVideoSize('.video-container video');
+          } else {
+              $('.homepage-hero-module').removeAttr('style');
           }
 
           $(window).on('resize', function() {
@@ -13,8 +15,10 @@
                   insertVideoElement();
                   scaleVideoContainer();
              // initBannerVideoSize('.video-container .filter');
-                  initBannerVideoSize('.video-container video');
+              //    initBannerVideoSize('.video-container video');
                   scaleBannerVideoSize('.video-container video');
+              } else {
+                  $('.homepage-hero-module').removeAttr('style');
               }
           });
     });

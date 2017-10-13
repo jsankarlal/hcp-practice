@@ -139,7 +139,8 @@ h1 {
     color: #ddd;
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    background-color: rgba(36, 58, 81, 0.75);
+//    background-color: rgba(36, 58, 81, 0.75);
+    background-color: initial;
 }
 
 .navbar-custom  .navbar-nav li:hover, .navbar-nav li .open, .navbar-custom .navbar-nav .active  {
