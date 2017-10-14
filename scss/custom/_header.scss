@@ -116,12 +116,27 @@
         margin-top: 94px;
     }
 }
+@media (max-width: 671px) {
+    .nav > li > a {
+        padding-right:7px;
+        padding-left:7px;
+    }
+    .container{
+        padding-right:5px;
+        padding-left:5px;
+    }
+    .btn-lg, .btn-group-lg > .btn {
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+}
 
 @media (max-width: $screen-xs-max) {
      #global-navigation{
         .brand-header{
             .brand-header-logo{
                 height:50px;
+                max-width: 100%;
             }
         }
      }

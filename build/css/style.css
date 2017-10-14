@@ -13003,12 +13003,31 @@ button.close {
   }
 }
 
-@media (max-width: 767px) {
-  /* line 123, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_header.scss */
-  #global-navigation .brand-header .brand-header-logo {
-    height: 50px;
+@media (max-width: 671px) {
+  /* line 120, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_header.scss */
+  .nav > li > a {
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+  /* line 124, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_header.scss */
+  .container {
+    padding-right: 5px;
+    padding-left: 5px;
   }
   /* line 128, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_header.scss */
+  .btn-lg, .btn-group-lg > .btn, .btn-group-lg > .btn {
+    padding: 10px 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 137, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_header.scss */
+  #global-navigation .brand-header .brand-header-logo {
+    height: 50px;
+    max-width: 100%;
+  }
+  /* line 143, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_header.scss */
   #nav.affix {
     top: 50px;
   }
@@ -13179,7 +13198,7 @@ footer #footer-copyright, .footer #footer-copyright {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background: #000;
+  background: url("/build/assets/videos/snowfall/snowfall.png") repeat;
 }
 
 /* line 23, C:/Practice/ZO/heroku/hcp-practice/scss/custom/_banner_videos.scss */
