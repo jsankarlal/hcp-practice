@@ -30468,7 +30468,7 @@ $(document).on('click', function (e) {
          var windowWidth = $(window).width();
           if (windowWidth > 991) {
               insertVideoElement();
-              scaleVideoContainer();
+//              scaleVideoContainer();
            // initBannerVideoSize('.video-container .filter');
             initBannerVideoSize('.hero-video-banner video');
           } else {
@@ -30479,10 +30479,8 @@ $(document).on('click', function (e) {
               windowWidth = $(window).width();
               if (windowWidth > 991) {
                   insertVideoElement();
-                  scaleVideoContainer();
-             // initBannerVideoSize('.video-container .filter');
+//                  scaleVideoContainer();
                   initBannerVideoSize('.hero-video-banner video');
-                  scaleBannerVideoSize('.hero-video-banner video');
               } else {
                   $('.homepage-hero-module').removeAttr('style');
               }
@@ -30522,7 +30520,7 @@ $(document).on('click', function (e) {
             $(element).each(function() {
                 var videoAspectRatio = $(this).data('height') / $(this).data('width');
                 $(this).width(windowWidth);
-                $('.homepage-hero-module').css('height', $(this).height());
+                $('.homepage-hero-module').css('height', parseInt($(this).height()) > 576 ? $(this).height() : '576');
 /*                if (windowWidth < 1000) {
                     videoHeight = windowHeight;
                     videoWidth = videoHeight / videoAspectRatio;

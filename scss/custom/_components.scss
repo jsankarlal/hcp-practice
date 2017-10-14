@@ -198,7 +198,12 @@ body.authentication-modal-open {
     margin-left: auto;
     max-width:854px;
 }
-
+@media screen and (max-width: 1024px){
+    .hero-middle-content{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
 
 /* Celergen Video Section  - Ends*/
 @media screen and (max-width: $screen-sm-max){
